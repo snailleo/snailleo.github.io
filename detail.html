@@ -18,6 +18,7 @@
     <script src="js/hhSwipe.js"></script>
 </head>
 <body style="background:#e6e6e6">
+<div class="content" id="content">
 <header class="head">
     <span class="menu"></span>
     <h1></h1>
@@ -30,20 +31,11 @@
     <ul class="scroll_wrap2">
       <li><a href="#"><img src="images/banner_02.jpg" width="100%" /></a></li>
       <li><a href="#"><img src="images/banner_02.jpg" width="100%" /></a></li>
-      <!--<li><a href="#"><img src="images/banner_02.jpg" width="100%" /></a></li>
-      <li><a href="#"><img src="images/banner_02.jpg" width="100%" /></a></li>
-      <li><a href="#"><img src="images/banner_02.jpg" width="100%" /></a></li>
-      <li><a href="#"><img src="images/banner_02.jpg" width="100%" /></a></li>-->
     </ul>
     </div>
-  <!--<span class="scroll_position_bg opacity6"></span>-->
   <ul class="scroll_position scroll_fix" id='scroll_position'>
       <li class="on"><a href="javascript:void(0);"></a></li>
       <li><a href="javascript:void(0);"></a></li>
-      <!--<li><a href="javascript:void(0);">3</a></li>
-      <li><a href="javascript:void(0);">4</a></li>
-      <li><a href="javascript:void(0);">5</a></li>
-      <li><a href="javascript:void(0);">6</a></li>-->
   </ul>
   </div>
   <!--scroll-->
@@ -90,19 +82,44 @@
   <span>合计: ¥139.0</span>
   <a href="javascript:;">立即购买</a>
 </section>
+</div>
+<div id="nav" class="nav">
+  <dl class="head_nav">
+    <dt><img src="images/banner_02.jpg" alt=""></dt>
+    <dd>欢迎您:<a href="javascript">辣妈无敌</a></dd>
+  </dl>
+  <ul class="nav_list">
+    <li><a href="#">最新产品</a></li>
+    <li><a href="#">最新产品</a></li>
+    <li><a href="#">最新产品</a></li>
+    <li><a href="#">最新产品</a></li>
+    <li><a href="#">最新产品</a></li>
+  </ul>
+</div>
+
+<div class="selColor" id="selColor">
+  
+</div>
+
+<script src="js/mf.js"></script>
+<script src="js/sel.js"></script>
+
+
 <script>
-var slider = Swipe(document.getElementById('scroll_img'), {
-    auto: 3000,
-    continuous: true,
-    callback: function(pos) {
-        var i = bullets.length;
-        while (i--) {
-            bullets[i].className = ' ';
+;(function(){
+  var f = $('.scroll_wrap').find("li").length;
+  $('#scroll_img').Swipe({
+        speed: 400,
+        auto: 4000,
+        callback: function(i, l) {
+            if (f == 2) {
+                i = i % 2
+            }
+            $('.scroll').find("#scroll_position li").eq(i).addClass("on").siblings().removeClass("on")
         }
-        bullets[pos].className = 'on';
-    }
-});
-var bullets = document.getElementById('scroll_position').getElementsByTagName('li');
+    })
+})();
+
 $(function(){
     $('.scroll_position_bg').css({
         width:$('#scroll_position').width()
