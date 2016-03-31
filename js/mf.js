@@ -19,7 +19,11 @@ MF.utils = {
 		lay.className = "msite_overlay";
 		MF.vars.content.appendChild(lay)
 
-		lay.on
+		lay.onclick = function(){
+			$(this).remove();
+			MF.vars.nav.style.display = 'none';
+			MF.vars.content.style.webkitTransform = "translate3d(0, 0, 0)";
+		}
 	}
 }
 
