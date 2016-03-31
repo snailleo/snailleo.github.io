@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MIFASOL商城</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1,minimum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name='apple-touch-fullscreen' content='yes'>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <link rel="stylesheet" href="css/css.css">
+    <script src="js/flexible.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/hhSwipe.js"></script>
+</head>
+<body style="background:#e6e6e6">
+<header class="head">
+    <span class="menu"></span>
+    <h1></h1>
+    <span class="shopping"></span>
+</header>
+<section class="banner">
+<!--scroll-->
+  <div class="scroll relative">
+    <div class="scroll_box" id="scroll_img">
+    <ul class="scroll_wrap2">
+      <li><a href="#"><img src="images/banner_02.jpg" width="100%" /></a></li>
+      <li><a href="#"><img src="images/banner_02.jpg" width="100%" /></a></li>
+      <!--<li><a href="#"><img src="images/banner_02.jpg" width="100%" /></a></li>
+      <li><a href="#"><img src="images/banner_02.jpg" width="100%" /></a></li>
+      <li><a href="#"><img src="images/banner_02.jpg" width="100%" /></a></li>
+      <li><a href="#"><img src="images/banner_02.jpg" width="100%" /></a></li>-->
+    </ul>
+    </div>
+  <!--<span class="scroll_position_bg opacity6"></span>-->
+  <ul class="scroll_position scroll_fix" id='scroll_position'>
+      <li class="on"><a href="javascript:void(0);"></a></li>
+      <li><a href="javascript:void(0);"></a></li>
+      <!--<li><a href="javascript:void(0);">3</a></li>
+      <li><a href="javascript:void(0);">4</a></li>
+      <li><a href="javascript:void(0);">5</a></li>
+      <li><a href="javascript:void(0);">6</a></li>-->
+  </ul>
+  </div>
+  <!--scroll-->
+</section>
+
+<h3 class="detail_tit">新款婴儿毛衣圆领针织衫保暖纯棉毛线衣新款婴儿毛衣圆领针织衫保暖纯棉毛线衣</h3>
+<p class="detail_per">¥139.0</p>
+<a href="javascript:;" class="detail_size">选择颜色 尺码</a>
+
+<ul class="detail_list" id="list">
+  <li>
+    <h4 class="on">商品详情</h4>
+    <p style="display:block;">我们致力创作和设计符合中国婴儿的高质量产品。
+每款产品都耗费了设计师和工作人员大量时间和精力。无论是在产品的理念，设计还是制作工具上都会格外关注和考虑产品的质量和孩童的舒适体验。
+名称: 初生婴儿春装连体服；</p>
+  </li>
+  <li>
+    <h4>推荐理由</h4>
+    <p>我们致力创作和设计符合中国婴儿的高质量产品。
+每款产品都耗费了设计师和工作人员大量时间和精力。无论是在产品的理念，设计还是制作工具上都会格外关注和考虑产品的质量和孩童的舒适体验。
+名称: 初生婴儿春装连体服；</p>
+  </li>
+  <li>
+    <h4>尺码对照表</h4>
+    <p>我们致力创作和设计符合中国婴儿的高质量产品。
+每款产品都耗费了设计师和工作人员大量时间和精力。无论是在产品的理念，设计还是制作工具上都会格外关注和考虑产品的质量和孩童的舒适体验。
+名称: 初生婴儿春装连体服；</p>
+  </li>
+  <li>
+    <h4>洗涤和保养</h4>
+    <p>我们致力创作和设计符合中国婴儿的高质量产品。
+每款产品都耗费了设计师和工作人员大量时间和精力。无论是在产品的理念，设计还是制作工具上都会格外关注和考虑产品的质量和孩童的舒适体验。
+名称: 初生婴儿春装连体服；</p>
+  </li>
+  <li>
+    <h4>退换货及运输说明</h4>
+    <p>我们致力创作和设计符合中国婴儿的高质量产品。
+每款产品都耗费了设计师和工作人员大量时间和精力。无论是在产品的理念，设计还是制作工具上都会格外关注和考虑产品的质量和孩童的舒适体验。
+名称: 初生婴儿春装连体服；</p>
+  </li>
+</ul>
+
+<section class="shop_bottom">
+  <span>合计: ¥139.0</span>
+  <a href="javascript:;">立即购买</a>
+</section>
+<script>
+var slider = Swipe(document.getElementById('scroll_img'), {
+    auto: 3000,
+    continuous: true,
+    callback: function(pos) {
+        var i = bullets.length;
+        while (i--) {
+            bullets[i].className = ' ';
+        }
+        bullets[pos].className = 'on';
+    }
+});
+var bullets = document.getElementById('scroll_position').getElementsByTagName('li');
+$(function(){
+    $('.scroll_position_bg').css({
+        width:$('#scroll_position').width()
+    });
+    var flag;
+    $("#list li h4").on('click',function(){
+      var _t = $(this);
+      flag = $(this).hasClass('on');
+      if(flag){
+        _t.removeClass('on').siblings('p').hide();
+      }else{
+        _t.addClass('on').siblings('p').show();
+      }
+    })
+});
+</script>
+</body>
+</html>

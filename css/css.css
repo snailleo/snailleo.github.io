@@ -1,0 +1,546 @@
+@charset "UTF-8";
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Microsoft Yahei","微软雅黑","宋体","Arial Unicode MS",System;
+  font-size: 14px;
+  list-style: none;
+  color: #2b2b2b;
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+img {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.clearb:after {
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+i {
+  font-style: normal;
+}
+
+.clearb {
+  zoom: 1;
+}
+
+.clear {
+  clear: both;
+}
+
+a {
+  outline: 0;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+a em {
+  font-family: "Courier New",Courier,monospace;
+  font-style: normal;
+}
+
+form, input, select {
+  margin: 0;
+  padding: 0;
+}
+
+img, input, select, label, button {
+  vertical-align: middle;
+  outline: none;
+}
+
+.hide {
+  display: none;
+}
+
+html {
+  font-size: 75px;
+}
+
+.icon-sprite, .icon-check, .icon-checked, .icon-del, .icon-logo, .icon-menu, .icon-round_jian, .icon-sheep, .icon-shopping, .icon-tit_bg, .icon-xiexian {
+  background-image: url('../images/icon-se5e38e3063.png');
+  background-repeat: no-repeat;
+}
+
+.icon-check {
+  background-position: 0 0;
+}
+
+.icon-checked {
+  background-position: 0 -44px;
+}
+
+.icon-del {
+  background-position: 0 -88px;
+}
+
+.icon-logo {
+  background-position: 0 -148px;
+}
+
+.icon-menu {
+  background-position: 0 -229px;
+}
+
+.icon-round_jian {
+  background-position: 0 -262px;
+}
+
+.icon-sheep {
+  background-position: 0 -298px;
+}
+
+.icon-shopping {
+  background-position: 0 -361px;
+}
+
+.icon-tit_bg {
+  background-position: 0 -414px;
+}
+
+.icon-xiexian {
+  background-position: 0 -489px;
+}
+
+.head {
+  height: 44px;
+  line-height: 44px;
+  text-align: center;
+  background: #e1ab8e;
+  position: relative;
+}
+.head h1 {
+  width: 71px;
+  height: 40px;
+  background: url("../images/icon/logo.png");
+  background-size: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -35px;
+  margin-top: -20px;
+}
+
+.menu {
+  float: left;
+  width: 20px;
+  height: 16px;
+  background: url("../images/icon/menu.png");
+  background-size: 100%;
+  margin: 14px 0 0 10px;
+}
+
+.shopping {
+  float: right;
+  width: 24px;
+  height: 26px;
+  background: url("../images/icon/shopping.png");
+  background-size: 100%;
+  margin: 10px 10px 0 0;
+}
+
+/*public scroll*/
+.scroll {
+  margin: 0 auto;
+  position: relative;
+}
+
+.scroll_box {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+}
+
+.scroll_wrap {
+  overflow: hidden;
+  position: relative;
+}
+
+.scroll_wrap2 {
+  overflow: hidden;
+  position: relative;
+}
+.scroll_wrap2 li {
+  height: 100%;
+}
+.scroll_wrap2 a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.scroll_wrap2 a img {
+  height: 100%;
+}
+
+.scroll_wrap li, .scroll_wrap2 li {
+  position: relative;
+  display: block;
+  width: 100%;
+  float: left;
+}
+
+.scroll_wrap li a, .scroll_wrap2 li a {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+}
+
+.scroll_position {
+  position: absolute;
+  z-index: 400px;
+  bottom: 14px;
+  width: 100%;
+  text-align: center;
+}
+
+.scroll_position li {
+  display: inline-block;
+  width: 0.16rem;
+  height: 0.16rem;
+  border-radius: 0.16rem;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.scroll_position li a {
+  font-size: 0;
+}
+
+.scroll_position li.on {
+  background: none;
+  border: 0.04rem solid #fff;
+}
+
+.scroll_position_bg {
+  background: #000;
+  position: absolute;
+  bottom: 12px;
+  left: 42%;
+  padding: 0 15px;
+  z-index: 380px;
+  height: 26px;
+  border-radius: 26px;
+}
+
+.scroll_fix li {
+  border: none;
+  background: #fff;
+}
+.scroll_fix li.on {
+  border: none;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.index_tit {
+  width: 265px;
+  height: 38px;
+  background: url("../images/icon/tit_bg.png");
+  background-size: 100%;
+  text-align: center;
+  line-height: 34px;
+  margin: 15px auto;
+  font-weight: normal;
+}
+
+.index_list {
+  margin: 0 7px;
+  padding-bottom: 23px;
+  background: url(../images/icon/xiexian.png) bottom repeat-x;
+}
+.index_list li {
+  width: 50%;
+  float: left;
+}
+
+.il_wrap {
+  margin: 0 3px;
+}
+.il_wrap a {
+  display: block;
+}
+.il_wrap a img {
+  width: 100%;
+}
+.il_wrap p {
+  font-size: 12px;
+  color: #646464;
+}
+
+.bottom {
+  background: #f5f5f5;
+  margin-top: 10px;
+  padding: 10px 15px 20px;
+}
+.bottom h3 {
+  width: 287px;
+  height: 65px;
+  background: url(../images/bottom_tit.png);
+  background-size: 100%;
+  margin: 0 auto;
+}
+.bottom h4 {
+  color: #323232;
+  font-size: 14px;
+  text-indent: 2em;
+  line-height: 30px;
+}
+.bottom p {
+  color: #646464;
+  font-size: 12px;
+  text-indent: 2em;
+  line-height: 22px;
+}
+
+.list_con {
+  padding: 10px 15px;
+  border-bottom: 1px solid #dcdcdc;
+  height: 80px;
+}
+.list_con .img_left {
+  float: left;
+  width: 112px;
+  font-size: 0;
+  margin-right: 10px;
+}
+.list_con .img_left span {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  background: url(../images/check.png);
+  background-size: 100%;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.list_con .img_left .on {
+  background: url(../images/checked.png);
+}
+.list_con .img_left a {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  vertical-align: middle;
+}
+.list_con .img_left a img {
+  width: 100%;
+  height: 100%;
+}
+
+.img_right {
+  overflow: hidden;
+}
+.img_right h3 {
+  color: #646464;
+  font-weight: normal;
+  height: 60px;
+}
+.img_right p {
+  margin-top: 5px;
+}
+.img_right p .money {
+  float: left;
+  font-size: 14px;
+}
+.img_right p .number {
+  float: right;
+}
+
+.list_bot {
+  height: 30px;
+  padding: 8px 15px;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.shop_del {
+  float: right;
+  width: 30px;
+  height: 30px;
+  background: url(../images/del.png);
+  background-size: 100%;
+  margin-right: 20px;
+}
+
+.shop_num {
+  float: right;
+  border-top: 1px solid #dcdcdc;
+  border-bottom: 1px solid #dcdcdc;
+  font-size: 0;
+  text-align: center;
+}
+.shop_num a {
+  display: inline-block;
+  font-size: 14px;
+  width: 28px;
+  height: 28px;
+  background: #f5f5f5;
+  color: #fff;
+  border-left: 1px solid #dcdcdc;
+  border-right: 1px solid #dcdcdc;
+}
+.shop_num span {
+  display: inline-block;
+  font-size: 14px;
+  color: #a0a0a0;
+  width: 34px;
+  height: 28px;
+  vertical-align: middle;
+}
+
+.shop_bottom {
+  width: 100%;
+  height: 50px;
+  border-top: 1px solid #e8e8e8;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: #fff;
+}
+.shop_bottom span {
+  color: #646464;
+  font-size: 16px;
+  line-height: 50px;
+  margin-left: 15px;
+}
+.shop_bottom a {
+  width: 120px;
+  height: 100%;
+  line-height: 50px;
+  float: right;
+  background: #ebc8b6;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+}
+
+.detail_tit {
+  font-size: 16px;
+  font-weight: normal;
+  padding: 10px 15px;
+  line-height: 22px;
+  color: #323232;
+  background: #fff;
+}
+
+.detail_per {
+  color: #323232;
+  font-size: 20px;
+  padding: 5px 15px 10px 15px;
+  border-bottom: 1px solid #e6e6e6;
+  background: #fff;
+}
+
+.detail_size {
+  height: 44px;
+  line-height: 44px;
+  padding: 0 15px;
+  font-size: 16px;
+  color: #323232;
+  position: relative;
+  display: block;
+  background: #fff;
+}
+.detail_size:after {
+  content: '';
+  position: absolute;
+  right: 15px;
+  top: 13px;
+  width: 18px;
+  height: 18px;
+  background: url(../images/icon/round_jian.png) no-repeat;
+  background-size: 100%;
+  transform: rotate(270deg);
+}
+
+.detail_list {
+  background: #fff;
+  margin-top: 10px;
+}
+.detail_list li h4 {
+  height: 44px;
+  line-height: 44px;
+  padding: 0 15px;
+  border-bottom: 1px solid #e6e6e6;
+  font-size: 16px;
+  color: #323232;
+  position: relative;
+}
+.detail_list li h4:after {
+  content: '';
+  position: absolute;
+  top: 13px;
+  right: 15px;
+  width: 18px;
+  height: 18px;
+  background: url(../images/icon/round_jian.png) no-repeat;
+  background-size: 100%;
+}
+.detail_list li .on:after {
+  transform: rotate(180deg);
+  -webkit-transition: all 1s ease 0;
+}
+.detail_list li p {
+  padding: 5px 15px;
+  line-height: 24px;
+  font-size: 14px;
+  color: #969696;
+  border-bottom: 1px solid #e6e6e6;
+  display: none;
+}
+
+.content {
+  width: 100%;
+  height: 1500px;
+  background: #ccc;
+}
+
+.nav {
+  position: fixed;
+  width: 272px;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #000;
+  display: none;
+}
+
+.msite_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99999;
+}
+
+/*# sourceMappingURL=css.css.map */
