@@ -520,6 +520,8 @@ html {
 
 .content {
   width: 100%;
+  -webkit-transition: all 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9);
+  transition: all 0.2s cubic-bezier(0.2, 0.3, 0.25, 0.9);
 }
 
 .nav {
