@@ -90,61 +90,81 @@ html {
   font-size: 75px;
 }
 
-.icon-sprite, .icon-check, .icon-checked, .icon-close, .icon-del, .icon-jian, .icon-logo, .icon-menu, .icon-round_jian, .icon-sheep, .icon-shopping, .icon-success, .icon-tit_bg, .icon-xiexian {
-  background-image: url('../images/icon-s5476852b5d.png');
+.mt10 {
+  margin-top: 10px;
+}
+
+.icon-sprite, .icon-address, .icon-check, .icon-checked, .icon-close, .icon-del, .icon-edit, .icon-jian, .icon-logo, .icon-menu, .icon-phone, .icon-quan, .icon-round_jian, .icon-sheep, .icon-shopping, .icon-success, .icon-tit_bg, .icon-xiexian {
+  background-image: url('../images/icon-s7d773c76d0.png');
   background-repeat: no-repeat;
 }
 
-.icon-check {
+.icon-address {
   background-position: 0 0;
 }
 
+.icon-check {
+  background-position: 0 -34px;
+}
+
 .icon-checked {
-  background-position: 0 -44px;
+  background-position: 0 -78px;
 }
 
 .icon-close {
-  background-position: 0 -88px;
+  background-position: 0 -122px;
 }
 
 .icon-del {
-  background-position: 0 -124px;
+  background-position: 0 -158px;
+}
+
+.icon-edit {
+  background-position: 0 -218px;
 }
 
 .icon-jian {
-  background-position: 0 -184px;
+  background-position: 0 -278px;
 }
 
 .icon-logo {
-  background-position: 0 -204px;
+  background-position: 0 -298px;
 }
 
 .icon-menu {
-  background-position: 0 -285px;
+  background-position: 0 -379px;
+}
+
+.icon-phone {
+  background-position: 0 -412px;
+}
+
+.icon-quan {
+  background-position: 0 -444px;
 }
 
 .icon-round_jian {
-  background-position: 0 -318px;
+  background-position: 0 -544px;
 }
 
 .icon-sheep {
-  background-position: 0 -354px;
+  background-position: 0 -580px;
 }
 
 .icon-shopping {
-  background-position: 0 -417px;
+  background-position: 0 -643px;
 }
 
 .icon-success {
-  background-position: 0 -470px;
+  background-position: 0 -696px;
 }
 
 .icon-tit_bg {
-  background-position: 0 -510px;
+  background-position: 0 -736px;
 }
 
 .icon-xiexian {
-  background-position: 0 -585px;
+  background-position: 0 -811px;
 }
 
 .head {
@@ -741,6 +761,7 @@ html {
 }
 
 .gsucc_dl {
+  background: #fff;
   padding: 10px 15px;
 }
 .gsucc_dl dt {
@@ -760,7 +781,207 @@ html {
   font-weight: normal;
   font-size: 14px;
   color: #646464;
+  height: 65px;
+}
+.gsucc_dl dd p {
+  font-size: 14px;
+  line-height: 15px;
+  color: #646464;
+}
+.gsucc_dl dd .num {
+  float: right;
+  font-style: normal;
+}
+
+.address {
+  border-bottom: 1px solid #ccc;
+  background: #fff;
+  padding: 10px 10px 10px 35px;
+  position: relative;
+}
+.address:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  width: 14px;
+  height: 17px;
+  background: url(../images/icon/address.png) no-repeat;
+  background-size: 100%;
+  margin-top: -8px;
+}
+.address ul {
+  display: table-cell;
+  min-height: 60px;
+}
+.address ul li {
+  line-height: 20px;
+  color: #646464;
+  font-size: 14px;
+}
+.address .address_you {
+  display: table-cell;
+}
+.address .address_you p {
+  line-height: 20px;
+  color: #646464;
+  font-size: 14px;
+}
+.address .address_you a {
+  display: block;
+  width: 80px;
+  height: 28px;
+  text-align: center;
+  line-height: 28px;
+  border: 1px solid #e1ab8e;
+  color: #e1ab8e;
+  font-size: 14px;
+  border-radius: 5px;
+  margin: 10px auto 0;
+}
+
+.address_phone {
+  background: #fff;
+  position: relative;
+  padding: 10px 0 10px 36px;
+}
+.address_phone:after {
+  content: "";
+  position: absolute;
+  width: 11px;
+  height: 16px;
+  background: url(../images/icon/phone.png) no-repeat;
+  background-size: 100%;
+  top: 15px;
+  left: 12px;
+}
+.address_phone input {
+  border: 1px solid #ccc;
+  width: 190px;
+  height: 28px;
+  border-radius: 5px;
+  padding: 0 5px;
+  margin-left: 5px;
+}
+
+.address_txt {
+  background: #fff;
+  border-top: 1px solid #ccc;
+  padding: 10px 15px;
+}
+.address_txt label {
+  float: left;
+  margin-right: 10px;
+}
+.address_txt textarea {
+  border: 1px solid #ccc;
+  height: 60px;
+  width: 220px;
+  padding: 5px;
+  line-height: 18px;
+}
+
+.quan {
+  padding: 0 15px;
+  height: 45px;
+  line-height: 45px;
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  font-size: 14px;
+  color: #646464;
+  position: relative;
+}
+.quan:after {
+  content: "";
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  width: 20px;
+  height: 20px;
+  background: url(../images/icon/check.png) no-repeat;
+  background-size: 100%;
+}
+
+.quan_limit {
+  background: #fff;
+  padding: 10px 15px;
+}
+.quan_limit dt {
+  float: left;
+}
+.quan_limit dt h4 {
+  color: #5a5858;
+  font-size: 14px;
+  line-height: 20px;
+}
+.quan_limit dt p {
+  font-size: 12px;
+  color: #969696;
+  margin-top: 5px;
+}
+.quan_limit dd {
+  float: right;
+}
+
+.quan_wrap {
   height: 50px;
+  min-width: 85px;
+  background: url(../images/icon/quan.png) no-repeat;
+  background-size: 100%;
+}
+.quan_wrap p {
+  line-height: 25px;
+  text-align: center;
+  color: #fff;
+}
+.quan_wrap .qw1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+.quan_wrap .qw2 {
+  font-size: 12px;
+}
+
+.add_adr {
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  background: #ecbda4;
+  text-align: center;
+  color: #fff;
+  margin: 10px 15px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.addre_list {
+  background: #fff;
+}
+.addre_list li {
+  position: relative;
+  padding: 5px 60px 5px 15px;
+  border-bottom: 1px solid #ccc;
+}
+.addre_list li h4 {
+  font-size: 14px;
+  color: #323232;
+}
+.addre_list li p {
+  font-size: 14px;
+  color: #969696;
+  line-height: 20px;
+  margin-top: 5px;
+}
+.addre_list li a {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: url(../images/icon/edit.png) no-repeat;
+  background-size: 100%;
+  top: 50%;
+  right: 15px;
+  margin-top: -15px;
 }
 
 /*# sourceMappingURL=css.css.map */

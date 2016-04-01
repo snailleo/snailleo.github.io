@@ -24,14 +24,25 @@ S.utils = {
 		S.vars.close.onclick = function(){S.utils.closeMenu.call(lay);}
 	},
 	closeMenu:function(){
-			$(this).remove();
-			S.vars.content.style.display = 'none';
-			S.vars.content.style.webkitTransform = "translate3d(0, 0, 0)";
-		}
+		$(this).remove();
+		S.vars.content.style.display = 'none';
+		S.vars.content.style.webkitTransform = "translate3d(0, 0, 0)";
+	},
+	bindDom:function(){
+		getId("add_shop").addEventListener('click',function(){
+			getId("gList").style.display = 'none';
+			getId("gSucc").style.display = 'block';
+		})
+	}
+}
+
+function getId(id){
+	return document.getElementById(id);
 }
 
 ;(function(){
 	$(".detail_size").on('click',function(){
 	   S.utils.showMenu();
 	})
+	S.utils.bindDom()
 })()

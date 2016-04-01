@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MIFASOL商城</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1,minimum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name='apple-touch-fullscreen' content='yes'>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <link rel="stylesheet" href="css/css.css">
+    <script src="js/flexible.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/hhSwipe.js"></script>
+</head>
+<body style="background:#e6e6e6">
+<div class="content" id="content">
+<header class="head">
+    <span class="menu"></span>
+    <h1></h1>
+    <span class="shopping"></span>
+</header>
+
+<a href="javascript:;" class="add_adr">添加新地址</a>
+
+<ul class="addre_list">
+  <li>
+    <h4>苗苗  13888098000</h4>
+    <p>北京市朝阳区 北京市朝阳区 三里屯街道 工体北路三里屯SOHO A座6层</p>
+    <a href="javascript:;"></a>
+  </li>
+  <li>
+    <h4>苗苗  13888098000</h4>
+    <p>北京市朝阳区 北京市朝阳区 三里屯街道 工体北路三里屯SOHO A座6层</p>
+    <a href="javascript:;"></a>
+  </li>
+  <li>
+    <h4>苗苗  13888098000</h4>
+    <p>北京市朝阳区 北京市朝阳区 三里屯街道 工体北路三里屯SOHO A座6层</p>
+    <a href="javascript:;"></a>
+  </li>
+</ul>
+
+
+<section class="shop_bottom">
+  <span>合计: ¥139.0</span>
+  <a href="javascript:;">立即购买</a>
+</section>
+</div>
+<div id="nav" class="nav">
+  <dl class="head_nav">
+    <dt><img src="images/banner_02.jpg" alt=""></dt>
+    <dd>欢迎您:<a href="javascript">辣妈无敌</a></dd>
+  </dl>
+  <ul class="nav_list">
+    <li><a href="#">最新产品</a></li>
+    <li><a href="#">最新产品</a></li>
+    <li><a href="#">最新产品</a></li>
+    <li><a href="#">最新产品</a></li>
+    <li><a href="#">最新产品</a></li>
+  </ul>
+</div>
+
+
+<script src="js/mf.js"></script>
+
+
+<script>
+;(function(){
+  var f = $('.scroll_wrap').find("li").length;
+  $('#scroll_img').Swipe({
+        speed: 400,
+        auto: 4000,
+        callback: function(i, l) {
+            if (f == 2) {
+                i = i % 2
+            }
+            $('.scroll').find("#scroll_position li").eq(i).addClass("on").siblings().removeClass("on")
+        }
+    })
+})();
+
+$(function(){
+    $('.scroll_position_bg').css({
+        width:$('#scroll_position').width()
+    });
+    var flag;
+    $("#list li h4").on('click',function(){
+      var _t = $(this);
+      flag = $(this).hasClass('on');
+      if(flag){
+        _t.removeClass('on').siblings('p').hide();
+      }else{
+        _t.addClass('on').siblings('p').show();
+      }
+    })
+});
+</script>
+</body>
+</html>
