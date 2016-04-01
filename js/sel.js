@@ -1,7 +1,7 @@
 var S = S || {}
 
 S.vars = {
-	h:30,
+	h:51,
 	close:document.getElementById("close"),
 	content:document.getElementById("selColor"),
 }

@@ -90,8 +90,8 @@ html {
   font-size: 75px;
 }
 
-.icon-sprite, .icon-check, .icon-checked, .icon-close, .icon-del, .icon-jian, .icon-logo, .icon-menu, .icon-round_jian, .icon-sheep, .icon-shopping, .icon-tit_bg, .icon-xiexian {
-  background-image: url('../images/icon-s2e352c9255.png');
+.icon-sprite, .icon-check, .icon-checked, .icon-close, .icon-del, .icon-jian, .icon-logo, .icon-menu, .icon-round_jian, .icon-sheep, .icon-shopping, .icon-success, .icon-tit_bg, .icon-xiexian {
+  background-image: url('../images/icon-s5476852b5d.png');
   background-repeat: no-repeat;
 }
 
@@ -135,12 +135,16 @@ html {
   background-position: 0 -417px;
 }
 
-.icon-tit_bg {
+.icon-success {
   background-position: 0 -470px;
 }
 
+.icon-tit_bg {
+  background-position: 0 -510px;
+}
+
 .icon-xiexian {
-  background-position: 0 -545px;
+  background-position: 0 -585px;
 }
 
 .head {
@@ -411,11 +415,13 @@ html {
 }
 .shop_num a {
   display: inline-block;
-  font-size: 14px;
+  font-size: 24px;
   width: 28px;
   height: 28px;
+  line-height: 25px;
+  vertical-align: middle;
   background: #f5f5f5;
-  color: #fff;
+  color: #a0a0a0;
   border-left: 1px solid #dcdcdc;
   border-right: 1px solid #dcdcdc;
 }
@@ -425,6 +431,7 @@ html {
   color: #a0a0a0;
   width: 34px;
   height: 28px;
+  line-height: 28px;
   vertical-align: middle;
 }
 
@@ -436,7 +443,6 @@ html {
   bottom: 0;
   left: 0;
   background: #fff;
-  z-index: 100001;
 }
 .shop_bottom span {
   color: #646464;
@@ -506,6 +512,7 @@ html {
   font-size: 16px;
   color: #323232;
   position: relative;
+  font-weight: normal;
 }
 .detail_list li h4:after {
   content: '';
@@ -518,8 +525,8 @@ html {
   background-size: 100%;
 }
 .detail_list li .on:after {
-  transform: rotate(180deg);
   -webkit-transition: all 1s ease 0;
+  transform: rotate(180deg);
 }
 .detail_list li p {
   padding: 5px 15px;
@@ -547,7 +554,7 @@ html {
 }
 
 .msite_overlay {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -609,7 +616,6 @@ html {
 .selColor {
   background: #fff;
   width: 100%;
-  height: 380px;
   position: fixed;
   left: 0;
   bottom: 0;
@@ -618,7 +624,7 @@ html {
 }
 
 .detail_dl {
-  padding: 30px 45px 15px 15px;
+  padding: 30px 30px 15px 15px;
   border-bottom: 1px solid #ccc;
 }
 .detail_dl dt {
@@ -651,7 +657,7 @@ html {
 .closeDdtail {
   position: absolute;
   top: 10px;
-  right: 15px;
+  right: 10px;
   width: 18px;
   height: 18px;
   background: url(../images/icon/close.png) no-repeat;
@@ -694,6 +700,67 @@ html {
   font-weight: normal;
   float: left;
   line-height: 30px;
+}
+
+.gou_bot {
+  width: 100%;
+  height: 50px;
+  margin-top: 20px;
+}
+.gou_bot span {
+  float: left;
+  width: 50%;
+  height: 100%;
+  background: #ecbda4;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  line-height: 50px;
+}
+.gou_bot span:nth-of-type(2) {
+  background: #e1ab8e;
+}
+
+.gsuc_tit {
+  height: 55px;
+  line-height: 55px;
+  text-align: center;
+  color: #444444;
+  font-size: 18px;
+  margin: 0 10px;
+  border-bottom: 1px solid #ccc;
+}
+.gsuc_tit em {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  background: url(../images/icon/success.png) no-repeat;
+  background-size: 100%;
+  margin-right: 5px;
+}
+
+.gsucc_dl {
+  padding: 10px 15px;
+}
+.gsucc_dl dt {
+  float: left;
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+}
+.gsucc_dl dt img {
+  width: 100%;
+  height: 100%;
+}
+.gsucc_dl dd {
+  overflow: hidden;
+}
+.gsucc_dl dd h4 {
+  font-weight: normal;
+  font-size: 14px;
+  color: #646464;
+  height: 50px;
 }
 
 /*# sourceMappingURL=css.css.map */
