@@ -1,8 +1,8 @@
 var S = S || {}
 
 S.vars = {
-	h:300,
-	// nav:document.getElementById("nav"),
+	h:30,
+	close:document.getElementById("close"),
 	content:document.getElementById("selColor"),
 }
 
@@ -12,19 +12,22 @@ S.utils = {
 		S.vars.content.style.transformOrigin = '0px 0px 0px';
 		S.vars.content.style.webkitTransition = '0';
 		S.vars.content.style.transition = '0';
-		S.vars.content.style.webkitTransform = "translate3d(0,-" + S.vars.h + "px, 0)";
-		S.vars.content.style.transform = "translate(0,-" + S.vars.h + "px)";
+		S.vars.content.style.webkitTransform = "translate3d(0,0, 0)";
+		S.vars.content.style.transform = "translate(0,0)";
 
 		var lay = document.createElement('div');
 		lay.className = "msite_overlay";
-		S.vars.content.appendChild(lay)
+		lay.style.background = "rgba(0,0,0,0.4)";
+		document.body.appendChild(lay)
 
-		lay.onclick = function(){
+		lay.onclick = S.utils.closeMenu;
+		S.vars.close.onclick = function(){S.utils.closeMenu.call(lay);}
+	},
+	closeMenu:function(){
 			$(this).remove();
 			S.vars.content.style.display = 'none';
 			S.vars.content.style.webkitTransform = "translate3d(0, 0, 0)";
 		}
-	}
 }
 
 ;(function(){
