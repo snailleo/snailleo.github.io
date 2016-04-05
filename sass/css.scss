@@ -132,8 +132,13 @@ html {
 		width:50%;
 		float:left;
 	}
-	padding-bottom:23px;
-	background:url(../images/icon/xiexian.png) bottom repeat-x;
+	padding-bottom:13px;
+	// background:url(../images/icon/xiexian.png) bottom repeat-x;
+	border:12px solid #fff;
+	border-top:0;
+	border-right:0;
+	border-left:0;
+	border-image:url(../images/icon/border.png) 20 round;
 }
 .il_wrap{
 	padding-bottom:8px;
