@@ -371,7 +371,8 @@ html {
 }
 
 .index_list {
-  margin: 0 7px;
+  margin-left: 10px;
+  box-sizing: border-box;
   padding-bottom: 13px;
   border: 12px solid #fff;
   border-top: 0;
@@ -382,11 +383,12 @@ html {
 .index_list li {
   width: 50%;
   float: left;
+  box-sizing: border-box;
+  padding-right: 10px;
 }
 
 .il_wrap {
   padding-bottom: 8px;
-  margin: 0 3px;
 }
 .il_wrap a {
   display: block;
