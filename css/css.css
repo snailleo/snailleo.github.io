@@ -94,8 +94,8 @@ html {
   margin-top: 10px;
 }
 
-.icon-sprite, .icon-address, .icon-check, .icon-checked, .icon-cicon1, .icon-cicon2, .icon-cicon3, .icon-cicon4, .icon-close, .icon-del, .icon-edit, .icon-jian, .icon-logo, .icon-menu, .icon-message, .icon-message1, .icon-message2, .icon-message_bg, .icon-phone, .icon-quan, .icon-quan_hui, .icon-round_jian, .icon-sheep, .icon-sheep_head, .icon-shopping, .icon-succ_bg, .icon-succ_order, .icon-success, .icon-tit_bg, .icon-weixin, .icon-xiexian, .icon-yiguoqi {
-  background-image: url('../images/icon-s6ff24da452.png');
+.icon-sprite, .icon-address, .icon-border, .icon-border2, .icon-check, .icon-checked, .icon-cicon1, .icon-cicon2, .icon-cicon3, .icon-cicon4, .icon-close, .icon-del, .icon-edit, .icon-jian, .icon-logo, .icon-menu, .icon-message, .icon-message1, .icon-message2, .icon-message_bg, .icon-phone, .icon-quan, .icon-quan_hui, .icon-round_jian, .icon-sheep, .icon-sheep_head, .icon-shopping, .icon-succ_bg, .icon-succ_order, .icon-success, .icon-tit_bg, .icon-weixin, .icon-xiexian, .icon-yiguoqi {
+  background-image: url('../images/icon-s19ed032ed9.png');
   background-repeat: no-repeat;
 }
 
@@ -103,124 +103,132 @@ html {
   background-position: 0 0;
 }
 
-.icon-check {
+.icon-border {
   background-position: 0 -34px;
 }
 
+.icon-border2 {
+  background-position: 0 -94px;
+}
+
+.icon-check {
+  background-position: 0 -154px;
+}
+
 .icon-checked {
-  background-position: 0 -78px;
+  background-position: 0 -198px;
 }
 
 .icon-cicon1 {
-  background-position: 0 -122px;
+  background-position: 0 -242px;
 }
 
 .icon-cicon2 {
-  background-position: 0 -156px;
+  background-position: 0 -276px;
 }
 
 .icon-cicon3 {
-  background-position: 0 -194px;
+  background-position: 0 -314px;
 }
 
 .icon-cicon4 {
-  background-position: 0 -224px;
+  background-position: 0 -344px;
 }
 
 .icon-close {
-  background-position: 0 -250px;
+  background-position: 0 -370px;
 }
 
 .icon-del {
-  background-position: 0 -286px;
-}
-
-.icon-edit {
-  background-position: 0 -346px;
-}
-
-.icon-jian {
   background-position: 0 -406px;
 }
 
+.icon-edit {
+  background-position: 0 -466px;
+}
+
+.icon-jian {
+  background-position: 0 -526px;
+}
+
 .icon-logo {
-  background-position: 0 -426px;
+  background-position: 0 -546px;
 }
 
 .icon-menu {
-  background-position: 0 -507px;
+  background-position: 0 -627px;
 }
 
 .icon-message {
-  background-position: 0 -540px;
+  background-position: 0 -660px;
 }
 
 .icon-message1 {
-  background-position: 0 -580px;
+  background-position: 0 -700px;
 }
 
 .icon-message2 {
-  background-position: 0 -670px;
+  background-position: 0 -790px;
 }
 
 .icon-message_bg {
-  background-position: 0 -760px;
+  background-position: 0 -880px;
 }
 
 .icon-phone {
-  background-position: 0 -770px;
+  background-position: 0 -890px;
 }
 
 .icon-quan {
-  background-position: 0 -802px;
+  background-position: 0 -922px;
 }
 
 .icon-quan_hui {
-  background-position: 0 -902px;
+  background-position: 0 -1022px;
 }
 
 .icon-round_jian {
-  background-position: 0 -1002px;
+  background-position: 0 -1122px;
 }
 
 .icon-sheep {
-  background-position: 0 -1038px;
+  background-position: 0 -1158px;
 }
 
 .icon-sheep_head {
-  background-position: 0 -1101px;
+  background-position: 0 -1221px;
 }
 
 .icon-shopping {
-  background-position: 0 -1261px;
+  background-position: 0 -1381px;
 }
 
 .icon-succ_bg {
-  background-position: 0 -1314px;
+  background-position: 0 -1434px;
 }
 
 .icon-succ_order {
-  background-position: 0 -1634px;
+  background-position: 0 -1754px;
 }
 
 .icon-success {
-  background-position: 0 -2004px;
+  background-position: 0 -2124px;
 }
 
 .icon-tit_bg {
-  background-position: 0 -2044px;
+  background-position: 0 -2164px;
 }
 
 .icon-weixin {
-  background-position: 0 -2119px;
+  background-position: 0 -2239px;
 }
 
 .icon-xiexian {
-  background-position: 0 -2160px;
+  background-position: 0 -2280px;
 }
 
 .icon-yiguoqi {
-  background-position: 0 -2183px;
+  background-position: 0 -2303px;
 }
 
 .head {
@@ -378,9 +386,16 @@ html {
 }
 .il_wrap a {
   display: block;
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
 }
 .il_wrap a img {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 100%;
 }
 .il_wrap p {
   line-height: 20px;
@@ -1728,6 +1743,32 @@ html {
 }
 .myscore_ul li {
   border-top: none;
+}
+
+.message_detail {
+  margin: 25px 15px;
+  border: 5px solid #fff;
+  padding: 10px 15px;
+  border-image: url(../images/icon/border2.png) 20 round;
+}
+.message_detail .mds_tit {
+  font-size: 16px;
+  color: #5a5858;
+  font-weight: normal;
+}
+.message_detail .mds_time {
+  font-size: 12px;
+  color: #969696;
+  margin-top: 8px;
+}
+
+.mds_con {
+  margin-top: 10px;
+}
+.mds_con p {
+  color: #787878;
+  font-size: 14px;
+  line-height: 22px;
 }
 
 /*# sourceMappingURL=css.css.map */
