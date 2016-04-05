@@ -409,6 +409,9 @@ html {
   font-size: 12px;
   color: #646464;
 }
+.il_wrap span {
+  color: #646464;
+}
 
 .bottom {
   background: #f5f5f5;
