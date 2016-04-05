@@ -134,7 +134,10 @@ html {
 		float:left;
 		box-sizing:border-box;
 		&:nth-child(odd){
-			padding-right:10px;
+			padding-right:5px;
+		}
+		&:nth-child(even){
+			padding-left:5px;
 		}
 	}
 	padding-bottom:13px;
