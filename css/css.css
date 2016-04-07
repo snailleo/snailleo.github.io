@@ -653,6 +653,10 @@ html {
   -webkit-transition: all 0.8s cubic-bezier(0.2, 0.3, 0.25, 0.9);
   transition: all 0.8s cubic-bezier(0.2, 0.3, 0.25, 0.9);
 }
+.content.in {
+  -webkit-transform: translate3d(272px, 0, 0) !important;
+  transform: translate3d(272px, 0, 0) !important;
+}
 
 .nav {
   position: fixed;

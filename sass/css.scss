@@ -399,6 +399,10 @@ html {
 	min-height:100%;
 	-webkit-transition:all .8s cubic-bezier(0.2,.3,.25,.9);
 	transition:all .8s cubic-bezier(0.2,.3,.25,.9);
+	&.in{
+		-webkit-transform:translate3d(272px,0,0)!important;
+		transform:translate3d(272px,0,0)!important;
+	}
 }
 .nav{
 	position:fixed;
