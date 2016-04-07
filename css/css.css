@@ -1800,4 +1800,59 @@ html {
   line-height: 22px;
 }
 
+#detail {
+  position: absolute;
+  width: 250px;
+  height: 120px;
+  background: #fff;
+  border-radius: 10px;
+  display: none;
+  -webkit-transform: translate(0, -25%);
+  transform: translate(0, -25%);
+  -webkit-transition: -webkit-transform .3s ease-out;
+  transition: transform .3s ease-out;
+}
+
+#detail.in {
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+.pop_top {
+  height: 75px;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #d5d5d5;
+}
+
+.bold_font {
+  padding-top: 15px;
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.small_hui {
+  color: #999999;
+  margin-top: 5px;
+}
+
+.pop_foot {
+  display: -webkit-box;
+  width: 100%;
+}
+
+.pop_foot a {
+  display: block;
+  -webkit-box-flex: 1;
+  line-height: 44px;
+  text-align: center;
+  font-size: 16px;
+  color: #2f88f0;
+}
+
+.pop_foot a:first-child {
+  border-right: 1px solid #d5d5d5;
+}
+
 /*# sourceMappingURL=css.css.map */
