@@ -90,12 +90,16 @@ html {
   font-size: 75px;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .mt10 {
   margin-top: 10px;
 }
 
-.icon-sprite, .icon-address, .icon-border, .icon-border2, .icon-check, .icon-checked, .icon-cicon1, .icon-cicon2, .icon-cicon3, .icon-cicon4, .icon-close, .icon-del, .icon-edit, .icon-jian, .icon-logo, .icon-menu, .icon-message, .icon-message1, .icon-message2, .icon-message_bg, .icon-phone, .icon-quan, .icon-quan_hui, .icon-round_jian, .icon-sheep, .icon-sheep_head, .icon-shopping, .icon-succ_bg, .icon-succ_order, .icon-success, .icon-tit_bg, .icon-weixin, .icon-xiexian, .icon-yiguoqi {
-  background-image: url('../images/icon-s19ed032ed9.png');
+.icon-sprite, .icon-address, .icon-border, .icon-border2, .icon-check, .icon-checked, .icon-cicon1, .icon-cicon2, .icon-cicon3, .icon-cicon4, .icon-close, .icon-del, .icon-edit, .icon-jian, .icon-logo, .icon-menu, .icon-message, .icon-message1, .icon-message2, .icon-message_bg, .icon-phone, .icon-quan, .icon-quan_hui, .icon-round_jian, .icon-sheep, .icon-sheep_head, .icon-shopping, .icon-shopping_, .icon-succ_bg, .icon-succ_order, .icon-success, .icon-tit_bg, .icon-weixin, .icon-xiexian, .icon-yiguoqi {
+  background-image: url('../images/icon-s059e1585a1.png');
   background-repeat: no-repeat;
 }
 
@@ -203,32 +207,36 @@ html {
   background-position: 0 -1381px;
 }
 
+.icon-shopping_ {
+  background-position: 0 -1429px;
+}
+
 .icon-succ_bg {
-  background-position: 0 -1434px;
+  background-position: 0 -1482px;
 }
 
 .icon-succ_order {
-  background-position: 0 -1754px;
+  background-position: 0 -1802px;
 }
 
 .icon-success {
-  background-position: 0 -2124px;
+  background-position: 0 -2172px;
 }
 
 .icon-tit_bg {
-  background-position: 0 -2164px;
+  background-position: 0 -2212px;
 }
 
 .icon-weixin {
-  background-position: 0 -2239px;
+  background-position: 0 -2287px;
 }
 
 .icon-xiexian {
-  background-position: 0 -2280px;
+  background-position: 0 -2328px;
 }
 
 .icon-yiguoqi {
-  background-position: 0 -2303px;
+  background-position: 0 -2351px;
 }
 
 .head {
@@ -262,10 +270,19 @@ html {
 .shopping {
   float: right;
   width: 24px;
-  height: 26px;
+  height: 24px;
+  position: relative;
   background: url("../images/icon/shopping.png");
   background-size: 100%;
   margin: 10px 10px 0 0;
+}
+.shopping i {
+  position: absolute;
+  top: -6px;
+  left: 9px;
+  color: #fff;
+  background: #e1ab8e;
+  line-height: 100%;
 }
 
 /*public scroll*/

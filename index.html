@@ -22,7 +22,7 @@
 <header class="head">
     <span class="menu"></span>
     <h1></h1>
-    <span class="shopping"></span>
+    <span class="shopping"><i>3</i></span>
 </header>
 <section class="banner">
 <!--scroll-->
@@ -108,6 +108,7 @@
             if (f == 2) {
                 i = i % 2
             }
+            console.log(i,l)
             $('.scroll').find("#scroll_position li").eq(i).addClass("on").siblings().removeClass("on")
         }
     })

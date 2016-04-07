@@ -20,6 +20,7 @@ $browser-default-font-size: 75px !default;
 html {
     font-size: $browser-default-font-size;
 }
+body{overflow-x:hidden;}
 .mt10{
 	margin-top:10px;
 }
@@ -77,9 +78,18 @@ html {
 .shopping{
 	float:right;
 	width:24px;
-	height:26px;
+	height:24px;
+	position:relative;
 	@include fn(shopping);
 	margin:10px 10px 0 0;
+	i{
+		position:absolute;
+		top:-6px;
+		left:9px;
+		color:#fff;
+		background:#e1ab8e;
+		line-height:100%;
+	}
 }
 
 /*public scroll*/
