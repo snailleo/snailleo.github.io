@@ -8,7 +8,7 @@ MF.vars = {
 
 MF.utils = {
 	showMenu:function(){
-		MF.vars.nav.style.display = 'block';
+		// MF.vars.nav.style.display = 'block';
 		MF.vars.nav.style.transformOrigin = '0px 0px 0px';
 		// MF.vars.content.style.webkitTransition = '0';
 		// MF.vars.content.style.transition = '0';
