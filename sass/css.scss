@@ -70,7 +70,7 @@ html {
 .menu{
 	float:left;
 	width:20px;
-	height:16px;
+	height:17px;
     @include fn(menu);
 	margin:14px 0 0 10px;
 }
@@ -201,7 +201,7 @@ html {
 
 .list_con{
 	padding:10px 15px;
-	border-bottom:1px solid #dcdcdc;
+	border-bottom:1px solid #e6e6e6;
 	height:80px;
 	.img_left{
 		float:left;
@@ -253,7 +253,7 @@ html {
 .list_bot{
 	height:30px;
 	padding:8px 15px;
-	border-bottom:1px solid #dcdcdc;
+	border-bottom:1px solid #e6e6e6;
 }
 .shop_del{
 	float:right;
@@ -265,8 +265,8 @@ html {
 }
 .shop_num{
 	float:right;
-	border-top:1px solid #dcdcdc;
-	border-bottom:1px solid #dcdcdc;
+	border-top:1px solid #e6e6e6;
+	border-bottom:1px solid #e6e6e6;
 	font-size:0;
 	text-align:center;
 	a{
@@ -278,8 +278,8 @@ html {
 		vertical-align:middle;
 		background:#f5f5f5;
 		color:#a0a0a0;
-		border-left:1px solid #dcdcdc;
-		border-right:1px solid #dcdcdc;
+		border-left:1px solid #e6e6e6;
+		border-right:1px solid #e6e6e6;
 	}
 	span{
 		display:inline-block;
@@ -311,7 +311,7 @@ html {
 		height:100%;
 		line-height:50px;
 		float:right;
-		background:#ebc8b6;
+		background:#e1ab8e;
 		text-align:center;
 		color:#fff;
 		font-size:16px;
