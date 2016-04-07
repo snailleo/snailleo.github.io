@@ -14,7 +14,10 @@ MF.utils = {
 		// MF.vars.content.style.transition = '0';
 		// MF.vars.content.style.webkitTransform = "translate3d(" + MF.vars.h + "px, 0, 0)";
 		// MF.vars.content.style.transform = "translate(" + MF.vars.h + "px, 0)";
-		MF.vars.content.classList.add('in')
+		setTimeout(function(){
+			MF.vars.content.classList.add('in');
+		},10)
+		
 
 		var lay = document.createElement('div');
 		lay.className = "msite_overlay";
