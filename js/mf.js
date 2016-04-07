@@ -25,9 +25,10 @@ MF.utils = {
 
 		lay.onclick = function(){
 			$(this).remove();
-			MF.vars.nav.style.display = 'none';
-			// MF.vars.content.style.webkitTransform = "translate3d(0, 0, 0)";
 			MF.vars.content.classList.remove('in');
+			setTimeout(function(){
+				MF.vars.nav.style.display = 'none';
+			},800)
 		}
 	}
 }
