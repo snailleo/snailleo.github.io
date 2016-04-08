@@ -93,6 +93,7 @@ html {
 
 body {
   overflow-x: hidden;
+  position: relative;
 }
 
 .mt10 {
@@ -693,7 +694,7 @@ body {
 }
 
 .msite_overlay {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;

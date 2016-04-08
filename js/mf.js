@@ -42,15 +42,10 @@ MF.utils = {
 			}
 		}
 		document.getElementById("scroll_position").innerHTML = str;
-	},
-	init:function(){
-		// document.getElementById("nav").style.minHeight = MF.vars.content.offsetHeight+"px"
-		document.getElementById("nav").style.minHeight = window.getComputedStyle(document.querySelector(".content"), null).height;
 	}
 }
 
 ;(function(){
-	
 	$(".menu").on('click',function(){
 	   MF.utils.showMenu();
 	})
