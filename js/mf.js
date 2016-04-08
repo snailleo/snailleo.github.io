@@ -30,10 +30,26 @@ MF.utils = {
 				MF.vars.nav.style.display = 'none';
 			},800)
 		}
+	},
+	setLi:function(){
+		var li = document.querySelectorAll('.scroll_wrap li');
+		var str = '';
+		for(var i=0;i<li.length;i++){
+			if(i == 0){
+				str += '<li class="on"><a href="javascript:void(0);"></a></li>';
+			}else{
+				str += '<li><a href="javascript:void(0);"></a></li>';
+			}
+		}
+		document.getElementById("scroll_position").innerHTML = str;
+	},
+	init:function(){
+		document.getElementById("nav").style.minHeight = MF.vars.content.offsetHeight+"px"
 	}
 }
 
 ;(function(){
+	MF.utils.init()
 	$(".menu").on('click',function(){
 	   MF.utils.showMenu();
 	})

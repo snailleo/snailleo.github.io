@@ -341,6 +341,7 @@ body {
 
 .scroll_position li {
   display: inline-block;
+  margin: 0 1px;
   width: 6px;
   height: 6px;
   -webkit-border-radius: 6px;
@@ -485,6 +486,7 @@ body {
 }
 .list_con .img_left .on {
   background: url(../images/checked.png);
+  background-size: 100%;
 }
 .list_con .img_left a {
   display: inline-block;
@@ -677,7 +679,7 @@ body {
 }
 
 .nav {
-  position: fixed;
+  position: absolute;
   width: 272px;
   top: 0;
   left: 0;
@@ -1878,6 +1880,10 @@ body {
 
 .pop_foot a:first-child {
   border-right: 1px solid #d5d5d5;
+}
+
+.shopping_list {
+  padding-bottom: 48px;
 }
 
 .bgf {

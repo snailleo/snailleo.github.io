@@ -35,8 +35,8 @@
     </div>
   <!--<span class="scroll_position_bg opacity6"></span>-->
   <ul class="scroll_position" id='scroll_position'>
-      <li class="on"><a href="javascript:void(0);"></a></li>
-      <li><a href="javascript:void(0);"></a></li>
+      <!-- <li class="on"><a href="javascript:void(0);"></a></li>
+      <li><a href="javascript:void(0);"></a></li> -->
   </ul>
   </div>
   <!--scroll-->
@@ -94,6 +94,15 @@
     <li><a href="#">最新产品</a></li>
     <li><a href="#">最新产品</a></li>
     <li><a href="#">最新产品</a></li>
+    <li><a href="#">最新产品</a></li>
+    <li><a href="#">最新产品</a></li>
+    <li><a href="#">最新产品</a></li>
+    <li><a href="#">最新产品</a></li>
+    <li><a href="#">最新产品</a></li>
+    <li><a href="#">最新产品</a></li>
+    <li><a href="#">最新产品</a></li>
+    <li><a href="#">最新产品</a></li>
+    <li><a href="#">最新产品</a></li>
   </ul>
 </div>
 
@@ -101,6 +110,7 @@
 <script>
 ;(function(){
   var f = $('.scroll_wrap').find("li").length;
+  MF.utils.setLi();
   $('#scroll_img').Swipe({
         speed: 400,
         auto: 4000,
@@ -108,7 +118,6 @@
             if (f == 2) {
                 i = i % 2
             }
-            console.log(i,l)
             $('.scroll').find("#scroll_position li").eq(i).addClass("on").siblings().removeClass("on")
         }
     })

@@ -113,7 +113,7 @@ body{overflow-x:hidden;}
 .scroll_wrap li,.scroll_wrap2 li{position:relative;display:block;width:100%;float:left;}
 .scroll_wrap li a,.scroll_wrap2 li a{display:block;margin:0 auto;position:relative;}
 .scroll_position{position:absolute;z-index:400px;bottom:14px;width:100%;text-align:center;}
-.scroll_position li{display:inline-block;width:6px;height:6px;-webkit-border-radius:6px;border-radius:6px;background:rgba(255,255,255,0.4);}
+.scroll_position li{display:inline-block;margin:0 1px;width:6px;height:6px;-webkit-border-radius:6px;border-radius:6px;background:rgba(255,255,255,0.4);}
 .scroll_position li a{font-size:0;}
 .scroll_position li.on{background:none;border:1px solid #fff;}
 .scroll_position_bg{background:#000;position:absolute;bottom:12px;left:42%;padding:0 15px;z-index:380px;height:26px;-webkit-border-radius:26px;border-radius:26px;}
@@ -229,6 +229,7 @@ body{overflow-x:hidden;}
 		}
 		.on{
 			background:url(../images/checked.png);
+			background-size:100%;
 		}
 		a{
 			display:inline-block;
@@ -416,7 +417,7 @@ body{overflow-x:hidden;}
 	}
 }
 .nav{
-	position:fixed;
+	position:absolute;
 	width:272px;
 	top:0;
 	left:0;
@@ -1522,5 +1523,9 @@ body{overflow-x:hidden;}
 .pop_foot{display:-webkit-box;width:100%;}
 .pop_foot a{display:block;-webkit-box-flex:1;line-height:44px;text-align:center;font-size:16px;color:rgb(47,136,240);}
 .pop_foot a:first-child{border-right:1px solid rgb(213,213,213)}
+
+.shopping_list{
+	padding-bottom:48px;
+}
 
 .bgf{background:#fff;}
