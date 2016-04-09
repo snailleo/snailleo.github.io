@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/css.css">
     <script src="js/jquery.js"></script>
     <script src="js/swipe.js"></script>
+    <!-- <script src="js/iscroll.js"></script> -->
     <!-- <script src="js/hhSwipe.js"></script> -->
 </head>
 <body>
@@ -85,6 +86,7 @@
 </div>
 
 <div id="nav" class="nav">
+<div>
   <dl class="head_nav">
     <dt><img src="images/banner_02.jpg" alt=""></dt>
     <dd>欢迎您:<a href="javascript">辣妈无敌</a></dd>
@@ -105,13 +107,14 @@
     <li><a href="#">最新产品</a></li>
     <li><a href="#">最新产品</a></li>
   </ul>
+  </div>
 </div>
 
 <script src="js/mf.js"></script>
 <script>
 ;(function(){
   var f = $('.scroll_wrap').find("li").length;
-  MF.utils.setLi();
+  MF.utils.setLi('scroll_wrap');
   $('#scroll_img').Swipe({
         speed: 400,
         auto: 4000,

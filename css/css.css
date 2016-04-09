@@ -8,6 +8,7 @@ html, body {
   color: #2b2b2b;
   min-height: 100%;
   overflow-x: hidden;
+  height: 100%;
 }
 
 * {
@@ -100,8 +101,8 @@ body {
   margin-top: 10px;
 }
 
-.icon-sprite, .icon-address, .icon-border, .icon-border2, .icon-check, .icon-checked, .icon-cicon1, .icon-cicon2, .icon-cicon3, .icon-cicon4, .icon-close, .icon-del, .icon-edit, .icon-jian, .icon-logo, .icon-menu, .icon-message, .icon-message1, .icon-message2, .icon-message_bg, .icon-phone, .icon-quan, .icon-quan_hui, .icon-round_jian, .icon-sheep, .icon-sheep_head, .icon-shopping, .icon-shopping_, .icon-succ_bg, .icon-succ_order, .icon-success, .icon-tit_bg, .icon-weixin, .icon-xiexian, .icon-yiguoqi {
-  background-image: url('../images/icon-s059e1585a1.png');
+.icon-sprite, .icon-address, .icon-border, .icon-border2, .icon-check, .icon-checked, .icon-cicon1, .icon-cicon2, .icon-cicon3, .icon-cicon4, .icon-close, .icon-del, .icon-edit, .icon-jian, .icon-logo, .icon-menu, .icon-message, .icon-message1, .icon-message2, .icon-message_bg, .icon-phone, .icon-quan, .icon-quan_hui, .icon-round_jian, .icon-sheep, .icon-sheep_head, .icon-shopping, .icon-shopping_, .icon-succ, .icon-succ_bg, .icon-succ_order, .icon-success, .icon-tanhao, .icon-tit_bg, .icon-weixin, .icon-xiexian, .icon-yiguoqi {
+  background-image: url('../images/icon-s0639b93a3f.png');
   background-repeat: no-repeat;
 }
 
@@ -213,32 +214,40 @@ body {
   background-position: 0 -1429px;
 }
 
-.icon-succ_bg {
+.icon-succ {
   background-position: 0 -1482px;
 }
 
+.icon-succ_bg {
+  background-position: 0 -1554px;
+}
+
 .icon-succ_order {
-  background-position: 0 -1802px;
+  background-position: 0 -1874px;
 }
 
 .icon-success {
-  background-position: 0 -2172px;
+  background-position: 0 -2244px;
+}
+
+.icon-tanhao {
+  background-position: 0 -2284px;
 }
 
 .icon-tit_bg {
-  background-position: 0 -2212px;
+  background-position: 0 -2356px;
 }
 
 .icon-weixin {
-  background-position: 0 -2287px;
+  background-position: 0 -2431px;
 }
 
 .icon-xiexian {
-  background-position: 0 -2328px;
+  background-position: 0 -2472px;
 }
 
 .icon-yiguoqi {
-  background-position: 0 -2351px;
+  background-position: 0 -2495px;
 }
 
 .head {
@@ -314,7 +323,7 @@ body {
 .scroll_wrap2 a {
   display: block;
   width: 100%;
-  height: 100%;
+  height: 100vw;
 }
 .scroll_wrap2 a img {
   height: 100%;
@@ -515,9 +524,11 @@ body {
 .img_right p .money {
   float: left;
   font-size: 14px;
+  color: #646464;
 }
 .img_right p .number {
   float: right;
+  color: #646464;
 }
 
 .list_bot {
@@ -678,6 +689,8 @@ body {
 .content.in {
   -webkit-transform: translate3d(272px, 0, 0) !important;
   transform: translate3d(272px, 0, 0) !important;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .nav {
@@ -691,6 +704,7 @@ body {
   transform-origin: 0px 0px 0px;
   transform: scale(1, 1);
   z-index: -1;
+  overflow: auto;
 }
 
 .msite_overlay {
@@ -1895,6 +1909,46 @@ body {
 
 .bgf {
   background: #fff;
+}
+
+.tanchu {
+  position: absolute;
+  background: black;
+  padding: 15px 22px;
+  color: white;
+  font-size: 16px;
+  border-radius: 10px;
+  text-align: center;
+}
+.tanchu span {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+}
+.tanchu .tsucc {
+  background: url(../images/icon/succ.png);
+  background-size: 100%;
+}
+.tanchu .ttan {
+  background: url(../images/icon/tanhao.png);
+  background-size: 100%;
+}
+
+.no_wrap {
+  text-align: center;
+}
+
+.no_state {
+  display: block;
+  margin: 80px auto 20px;
+  background: url(../images/sheep.png);
+  width: 70px;
+  height: 63px;
+}
+
+.ns_text {
+  color: #969696;
+  font-size: 14px;
 }
 
 /*# sourceMappingURL=css.css.map */

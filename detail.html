@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/css.css">
     <script src="js/flexible.js"></script>
     <script src="js/jquery.js"></script>
-    <script src="js/hhSwipe.js"></script>
+    <script src="js/swipe.js"></script>
 </head>
 <body style="background:#e6e6e6">
 <div class="content" id="content">
@@ -164,7 +164,8 @@
 
 <script>
 ;(function(){
-  var f = $('.scroll_wrap').find("li").length;
+  var f = $('.scroll_wrap2').find("li").length;
+  MF.utils.setLi('scroll_wrap2');
   $('#scroll_img').Swipe({
         speed: 400,
         auto: 4000,
