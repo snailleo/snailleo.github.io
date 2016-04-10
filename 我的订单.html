@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/css.css">
     <script src="js/flexible.js"></script>
     <script src="js/jquery.js"></script>
-    <script src="js/hhSwipe.js"></script>
+    <script src="js/iscroll.js" type="text/javascript" ></script>
 </head>
 <body style="background:#f5f5f5">
 <div class="content" id="content">
@@ -31,7 +31,8 @@
   </p>
 
   <div class="order_con">
-    <div class="order">
+    <div class="order" id="order1">
+    <div class="wrap">
       <section class="orders">
         <h3>订单号: 12098765909<span class="no_pay">未支付</span></h3>
         <ul class="orders_list">
@@ -64,9 +65,15 @@
         </ul>
         <a href="javascript:;" class="show_more">共5件商品，显示其他3件</a>
       </section>
+      <div id="pullUp" class="pullup">
+          <span class="pullIcon"></span>
+          <span class="la_more">上拉加载更多...</span>
+      </div>
+      </div>
     </div>
 
-    <div class="order" style="display:none">
+    <div class="order" id="order2" style="display:none">
+    <div class="wrap">
       <section class="orders">
         <h3>订单号: 12098765909<span>交易成功</span></h3>
         <ul class="orders_list">
@@ -111,6 +118,11 @@
           应付金额：￥88.00<span>积分已积累</span>
         </p>
       </section>
+      <div id="pullUp2" class="pullup">
+      <span class="pullIcon"></span>
+      <span class="la_more">上拉加载更多...</span>
+  </div>
+      </div>
     </div>
   </div>
 
@@ -131,6 +143,44 @@
 </div>
 
 <script src="js/mf.js"></script>
+<script src="js/list_loadmore2.js" type="text/javascript" ></script>
+<script>
+//执行加载请求  
+function pullUpAction () {
+  setTimeout(function () {  
+    var el, li, i;
+    el = $('#pullUp');
+    pullUpEl.className = 'pullup';
+    pullUpEl.querySelector('.la_more').innerHTML = '上拉加载更多...';
+
+    for (i=0; i<3; i++) {
+      li = document.createElement('li');
+      li.innerText = '行数' + (++generatedCount);
+      li.style.height = "50px";
+      el.before($(li));
+    }
+    
+    myScroll.refresh();   
+  }, 1000); 
+}
+function pullUpAction2 () {
+  setTimeout(function () {  
+    var el, li, i;
+    el = $('#pullUp2');
+    pullUpEl.className = 'pullup';
+    pullUpEl.querySelector('.la_more').innerHTML = '上拉加载更多...';
+
+    for (i=0; i<3; i++) {
+      li = document.createElement('li');
+      li.innerText = '行数' + (++generatedCount);
+      li.style.height = "50px";
+      el.before($(li));
+    }
+    
+    myScroll2.refresh();   
+  }, 1000); 
+}
+</script>
 <script>
 ;(function(){
   $(".order_tit span").on('click',function(){
@@ -138,6 +188,7 @@
     var _t = $(this);
     _t.addClass('on').siblings('span').removeClass('on');
     $(".order_con .order").eq(_index).show().siblings('.order').hide();
+    myScroll2.refresh();
   })
 })()
 </script>

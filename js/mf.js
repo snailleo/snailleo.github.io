@@ -9,7 +9,7 @@ MF.vars = {
 MF.utils = {
 	showMenu:function(){
 		MF.vars.nav.style.display = 'block';
-		MF.vars.nav.style.zIndex = '0';
+		// MF.vars.nav.style.zIndex = '0';
 		MF.vars.nav.style.transformOrigin = '0px 0px 0px';
 		// MF.vars.content.style.webkitTransition = '0';
 		// MF.vars.content.style.transition = '0';
@@ -18,6 +18,9 @@ MF.utils = {
 		setTimeout(function(){
 			MF.vars.content.classList.add('in');
 		},10)
+		setTimeout(function(){
+			MF.vars.nav.style.zIndex = '0';
+		},800)
 		
 
 		var lay = document.createElement('div');
@@ -65,7 +68,7 @@ function tanchu(text,type){
 	document.body.appendChild(_obj);
 	_obj.innerHTML = _html;
 
-	var left=($(window).width()-$(".tanchu").width())/2+'px';
+	var left=($(window).width()-$(".tanchu").width()-44)/2+'px';
 	var top =($(window).height()-$(".tanchu").width())/2+'px';
 	$(".tanchu").css({	"left":left,"top":top,"display":"block","z-index":_z-(-1)});
 }

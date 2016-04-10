@@ -15,10 +15,11 @@
     <link rel="stylesheet" href="css/css.css">
     <script src="js/flexible.js"></script>
     <script src="js/jquery.js"></script>
-    <script src="js/hhSwipe.js"></script>
+    <script src="js/iscroll.js" type="text/javascript" ></script>
 </head>
 <body style="background:#f5f5f5">
-<div class="content" id="content">
+<div class="content2" id="content">
+<div class="wrap">
   <header class="head">
       <span class="menu"></span>
       <h1></h1>
@@ -51,7 +52,11 @@
       <p>购买金色童年商品使用</p>
     </li>
   </ul>
-
+  <div id="pullUp" class="pullup">
+      <span class="pullIcon"></span>
+      <span class="la_more">上拉加载更多...</span>
+  </div>
+</div>
 </div>
 
 <div id="nav" class="nav">
@@ -69,6 +74,26 @@
 </div>
 
 <script src="js/mf.js"></script>
+<script src="js/list_loadmore.js" type="text/javascript" ></script>
+<script>
+//执行加载请求  
+function pullUpAction () {
+  setTimeout(function () {  
+    var el, li, i;
+    el = $('.messages');
+    pullUpEl.className = 'pullup';
+    pullUpEl.querySelector('.la_more').innerHTML = '上拉加载更多...';
 
+    for (i=0; i<3; i++) {
+      li = document.createElement('li');
+      li.innerText = '行数' + (++generatedCount);
+      li.style.height = "50px";
+      el.append($(li));
+    }
+    
+    myScroll.refresh();   
+  }, 1000); 
+}
+</script>
 </body>
 </html>

@@ -101,8 +101,8 @@ body {
   margin-top: 10px;
 }
 
-.icon-sprite, .icon-address, .icon-border, .icon-border2, .icon-check, .icon-checked, .icon-cicon1, .icon-cicon2, .icon-cicon3, .icon-cicon4, .icon-close, .icon-del, .icon-edit, .icon-jian, .icon-logo, .icon-menu, .icon-message, .icon-message1, .icon-message2, .icon-message_bg, .icon-phone, .icon-quan, .icon-quan_hui, .icon-round_jian, .icon-sheep, .icon-sheep_head, .icon-shopping, .icon-shopping_, .icon-succ, .icon-succ_bg, .icon-succ_order, .icon-success, .icon-tanhao, .icon-tit_bg, .icon-weixin, .icon-xiexian, .icon-yiguoqi {
-  background-image: url('../images/icon-s0639b93a3f.png');
+.icon-sprite, .icon-address, .icon-adizhi, .icon-border, .icon-border2, .icon-check, .icon-checked, .icon-cicon1, .icon-cicon2, .icon-cicon3, .icon-cicon4, .icon-close, .icon-del, .icon-edit, .icon-jian, .icon-logo, .icon-menu, .icon-message, .icon-message1, .icon-message2, .icon-message_bg, .icon-phone, .icon-quan, .icon-quan_hui, .icon-round_jian, .icon-sheep, .icon-sheep_head, .icon-shiyong, .icon-shopping, .icon-shopping_, .icon-succ, .icon-succ_bg, .icon-succ_order, .icon-success, .icon-tanhao, .icon-tit_bg, .icon-weixin, .icon-xiexian, .icon-yiguoqi {
+  background-image: url('../images/icon-s6703e64a43.png');
   background-repeat: no-repeat;
 }
 
@@ -110,144 +110,152 @@ body {
   background-position: 0 0;
 }
 
-.icon-border {
+.icon-adizhi {
   background-position: 0 -34px;
 }
 
+.icon-border {
+  background-position: 0 -66px;
+}
+
 .icon-border2 {
-  background-position: 0 -94px;
+  background-position: 0 -126px;
 }
 
 .icon-check {
-  background-position: 0 -154px;
+  background-position: 0 -186px;
 }
 
 .icon-checked {
-  background-position: 0 -198px;
+  background-position: 0 -230px;
 }
 
 .icon-cicon1 {
-  background-position: 0 -242px;
+  background-position: 0 -274px;
 }
 
 .icon-cicon2 {
-  background-position: 0 -276px;
+  background-position: 0 -308px;
 }
 
 .icon-cicon3 {
-  background-position: 0 -314px;
+  background-position: 0 -346px;
 }
 
 .icon-cicon4 {
-  background-position: 0 -344px;
+  background-position: 0 -376px;
 }
 
 .icon-close {
-  background-position: 0 -370px;
+  background-position: 0 -402px;
 }
 
 .icon-del {
-  background-position: 0 -406px;
+  background-position: 0 -438px;
 }
 
 .icon-edit {
-  background-position: 0 -466px;
+  background-position: 0 -498px;
 }
 
 .icon-jian {
-  background-position: 0 -526px;
+  background-position: 0 -558px;
 }
 
 .icon-logo {
-  background-position: 0 -546px;
+  background-position: 0 -578px;
 }
 
 .icon-menu {
-  background-position: 0 -627px;
+  background-position: 0 -659px;
 }
 
 .icon-message {
-  background-position: 0 -660px;
+  background-position: 0 -692px;
 }
 
 .icon-message1 {
-  background-position: 0 -700px;
+  background-position: 0 -732px;
 }
 
 .icon-message2 {
-  background-position: 0 -790px;
+  background-position: 0 -822px;
 }
 
 .icon-message_bg {
-  background-position: 0 -880px;
+  background-position: 0 -912px;
 }
 
 .icon-phone {
-  background-position: 0 -890px;
-}
-
-.icon-quan {
   background-position: 0 -922px;
 }
 
+.icon-quan {
+  background-position: 0 -954px;
+}
+
 .icon-quan_hui {
-  background-position: 0 -1022px;
+  background-position: 0 -1054px;
 }
 
 .icon-round_jian {
-  background-position: 0 -1122px;
+  background-position: 0 -1154px;
 }
 
 .icon-sheep {
-  background-position: 0 -1158px;
+  background-position: 0 -1190px;
 }
 
 .icon-sheep_head {
-  background-position: 0 -1221px;
+  background-position: 0 -1253px;
+}
+
+.icon-shiyong {
+  background-position: 0 -1413px;
 }
 
 .icon-shopping {
-  background-position: 0 -1381px;
+  background-position: 0 -1497px;
 }
 
 .icon-shopping_ {
-  background-position: 0 -1429px;
+  background-position: 0 -1545px;
 }
 
 .icon-succ {
-  background-position: 0 -1482px;
+  background-position: 0 -1598px;
 }
 
 .icon-succ_bg {
-  background-position: 0 -1554px;
+  background-position: 0 -1670px;
 }
 
 .icon-succ_order {
-  background-position: 0 -1874px;
+  background-position: 0 -1990px;
 }
 
 .icon-success {
-  background-position: 0 -2244px;
+  background-position: 0 -2360px;
 }
 
 .icon-tanhao {
-  background-position: 0 -2284px;
+  background-position: 0 -2400px;
 }
 
 .icon-tit_bg {
-  background-position: 0 -2356px;
-}
-
-.icon-weixin {
-  background-position: 0 -2431px;
-}
-
-.icon-xiexian {
   background-position: 0 -2472px;
 }
 
+.icon-weixin {
+  background-position: 0 -2547px;
+}
+
+.icon-xiexian {
+  background-position: 0 -2588px;
+}
+
 .icon-yiguoqi {
-  background-position: 0 -2495px;
+  background-position: 0 -2611px;
 }
 
 .head {
@@ -1309,6 +1317,11 @@ body {
 
 .order_con {
   margin-top: 10px;
+  position: absolute;
+  width: 100%;
+  top: 75px;
+  left: 0;
+  bottom: 0;
 }
 
 .orders {
@@ -1449,7 +1462,8 @@ body {
   border-radius: 80px;
   float: left;
   margin-right: 15px;
-  background: #fff;
+  background: url(../images/icon/sheep_head.png);
+  background-size: 100%;
 }
 .center_dl dt img {
   width: 100%;
@@ -1736,6 +1750,22 @@ body {
   top: 4px;
 }
 
+.shiyong {
+  background: url(../images/icon/quan_hui.png);
+  background-size: 100%;
+  position: relative;
+}
+.shiyong:after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 42px;
+  background: url(../images/icon/shiyong.png);
+  background-size: 100%;
+  right: 18px;
+  top: 4px;
+}
+
 .messages {
   background: #fff;
 }
@@ -1912,7 +1942,7 @@ body {
 }
 
 .tanchu {
-  position: absolute;
+  position: fixed;
   background: black;
   padding: 15px 22px;
   color: white;
@@ -1949,6 +1979,135 @@ body {
 .ns_text {
   color: #969696;
   font-size: 14px;
+}
+
+.selyou {
+  height: 40px;
+  line-height: 40px;
+  background: #f5f5f5;
+  border-bottom: 1px solid #e6e6e6;
+  padding: 0 15px;
+  overflow: hidden;
+  position: relative;
+}
+.selyou p {
+  height: 1px;
+  background: #e6e6e6;
+  margin-top: 19px;
+}
+.selyou span {
+  position: absolute;
+  width: 140px;
+  text-align: center;
+  background: #f5f5f5;
+  top: 0;
+  left: 50%;
+  margin-left: -70px;
+  font-size: 14px;
+  color: #5a5858;
+}
+
+.bushiyou {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 44px;
+  line-height: 44px;
+  background: #fff;
+  text-align: center;
+  color: #323232;
+  right: 0;
+  font-size: 16px;
+}
+
+.center_no {
+  height: 44px;
+  line-height: 44px;
+  color: #646464;
+  font-size: 14px;
+  border-top: 1px solid #e6e6e6;
+}
+
+.add_dizhi {
+  display: inline-block;
+  vertical-align: middle;
+  width: 16px;
+  height: 16px;
+  background: url(../images/icon/adizhi.png);
+  background-size: 100%;
+  margin-left: 5px;
+}
+
+.content2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  -webkit-transition: all 0.8s cubic-bezier(0.2, 0.3, 0.25, 0.9);
+  transition: all 0.8s cubic-bezier(0.2, 0.3, 0.25, 0.9);
+  background: #f5f5f5;
+}
+.content2.in {
+  -webkit-transform: translate3d(272px, 0, 0) !important;
+  transform: translate3d(272px, 0, 0) !important;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/*加载更多*/
+#pullUp, #pullUp2 {
+  text-align: center;
+  height: 42px;
+  line-height: 42px;
+}
+
+.pullIcon {
+  -webkit-transition-property: -webkit-transform;
+  -webkit-transition-duration: 250ms;
+}
+
+.pullup .pullIcon, .flip .pullIcon {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  background: url(../images/jiantou.png) center no-repeat;
+  background-size: 28px 22px;
+  vertical-align: middle;
+}
+
+#pullUp.flip .pullIcon, #pullUp2.flip .pullIcon {
+  -webkit-transform: rotate(180deg) translateZ(0);
+}
+
+.loading .pullIcon {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  background: url(../images/loading.png) center no-repeat;
+  vertical-align: middle;
+  -webkit-transform: rotate(0deg) translateZ(0);
+  -webkit-transition-duration: 0ms;
+  -webkit-animation-name: loading;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+}
+
+.order {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+@-webkit-keyframes loading {
+  from {
+    -webkit-transform: rotate(0deg) translateZ(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg) translateZ(0);
+  }
 }
 
 /*# sourceMappingURL=css.css.map */
