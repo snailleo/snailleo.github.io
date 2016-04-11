@@ -1723,6 +1723,13 @@ body{overflow-x:hidden;position:relative;}
 	-webkit-border-radius:5px;
 	border-radius:5px;
 }
+.city_sel select{
+	padding:2px 6px;
+	-webkit-appearance: none;
+	appearance: none;
+	border:1px solid #ccc;
+	border-radius:5px;
+}
 
 /*加载更多*/
 #pullUp,#pullUp2{text-align:center;height:42px;line-height:42px;}

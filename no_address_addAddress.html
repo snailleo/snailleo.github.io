@@ -37,9 +37,12 @@
       <label for="">手机号</label>
       <input type="text" class="no_text" placeholder="联系您的电话">
     </li>
-    <li>
+    <li class="city_sel">
       <label for="">城市</label>
-      <input type="text" class="no_text" id="txt_area3" placeholder="省&nbsp;&nbsp;市&nbsp;&nbsp;区">
+      <!-- <input type="text" class="no_text" id="txt_area3" placeholder="省&nbsp;&nbsp;市&nbsp;&nbsp;区"> -->
+      <select name="" id=""><option value="">省</option></select>
+      <select name="" id=""><option value="">市</option></select>
+      <select name="" id=""><option value="">区</option></select>
     </li>
     <li>
       <label for="">地址</label>
@@ -72,7 +75,7 @@
 <script src="js/mf.js"></script>
 <script>
   var selectArea = new MobileSelectArea();
-    selectArea.init({trigger:'#txt_area3',data:'js/data.json',default:0});
+    selectArea.init({trigger:$('#txt_area3'),value:'1,1,1',data:'js/data.json'});
 </script>
 </body>
 </html>
