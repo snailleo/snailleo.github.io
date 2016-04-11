@@ -2055,6 +2055,70 @@ body {
   overflow: hidden;
 }
 
+.edit_tit {
+  font-size: 14px;
+  color: #323232;
+  padding-top: 10px;
+  font-weight: normal;
+}
+
+.edit_p {
+  font-size: 10px;
+  color: #b4b4b4;
+  line-height: 18px;
+}
+
+.edit_wrap {
+  padding: 0 15px;
+}
+
+.edit_txt {
+  width: 100%;
+  border: 1px solid #cecece;
+  background: #fff;
+  font-size: 14px;
+  height: 44px;
+  line-height: 44px;
+  padding: 0 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-top: 5px;
+}
+
+.edit_sex {
+  border-radius: 5px;
+  border: 1px solid #cecece;
+  background: #fff;
+}
+.edit_sex li {
+  height: 44px;
+  line-height: 44px;
+  padding-left: 38px;
+  background: url(../images/icon/check.png) 10px center no-repeat;
+  background-size: 16px 16px;
+}
+.edit_sex li:nth-child(1) {
+  border-bottom: 1px solid #cecece;
+}
+.edit_sex .on {
+  background: url(../images/icon/checked.png) 10px center no-repeat;
+  background-size: 16px 16px;
+}
+
+.edit_sub {
+  margin-top: 30px;
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background: #ecbda4;
+  color: #fff;
+  font-size: 16px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
 /*加载更多*/
 #pullUp, #pullUp2 {
   text-align: center;
