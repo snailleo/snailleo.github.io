@@ -9,7 +9,6 @@ html, body {
   min-height: 100%;
   overflow-x: hidden;
   /*height: 100%;*/
-  height: 100vh;
 }
 
 * {
@@ -91,6 +90,7 @@ img, input, select, label, button {
 
 html {
   font-size: 75px;
+  height:100%;
 }
 
 body {
@@ -100,6 +100,9 @@ body {
 
 .mt10 {
   margin-top: 10px;
+}
+.pd51{
+  padding-bottom:51px;
 }
 
 .icon-sprite, .icon-address, .icon-adizhi, .icon-border, .icon-border2, .icon-check, .icon-checked, .icon-cicon1, .icon-cicon2, .icon-cicon3, .icon-cicon4, .icon-close, .icon-del, .icon-edit, .icon-jian, .icon-logo, .icon-menu, .icon-message, .icon-message1, .icon-message2, .icon-message_bg, .icon-phone, .icon-quan, .icon-quan_hui, .icon-round_jian, .icon-sheep, .icon-sheep_head, .icon-shiyong, .icon-shopping, .icon-shopping_, .icon-succ, .icon-succ_bg, .icon-succ_order, .icon-success, .icon-tanhao, .icon-tit_bg, .icon-weixin, .icon-xiexian, .icon-yiguoqi {
@@ -954,8 +957,8 @@ body {
   margin-top: -8px;
 }
 .address ul {
-  display: table-cell;
-  min-height: 60px;
+  min-height: 50px;
+  padding-right:90px;
 }
 .address ul li {
   line-height: 20px;
@@ -963,7 +966,10 @@ body {
   font-size: 14px;
 }
 .address .address_you {
-  display: table-cell;
+  position:absolute;
+  top:50%;
+  right:10px;
+  margin-top:-27px;
 }
 .address .address_you p {
   line-height: 20px;
@@ -981,7 +987,7 @@ body {
   font-size: 14px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
-  margin: 10px auto 0;
+  margin: 5px auto 0;
 }
 
 .address_phone {
@@ -2186,6 +2192,7 @@ body {
   top: 0;
   left: 0;
   bottom: 0;
+  width:100%;
 }
 
 @-webkit-keyframes loading {
