@@ -671,8 +671,8 @@ body {
   background-size: 100%;
 }
 .detail_list li .on:after {
-  -webkit-transition: all 1s ease 0;
-  transition: all 1s ease 0;
+  -webkit-transition: transform 1s ease 0;
+  transition: transform 1s ease 0;
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg);
 }
