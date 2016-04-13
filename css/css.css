@@ -324,6 +324,7 @@ body {
 .scroll_wrap2 {
   overflow: hidden;
   position: relative;
+  height:100vw;
 }
 .scroll_wrap2 li {
   height: 100%;
@@ -1021,8 +1022,8 @@ body {
 }
 .address_txt textarea {
   border: 1px solid #ccc;
-  height: 60px;
-  width: 220px;
+  height: 75px;
+  width: 70%;
   padding: 5px;
   line-height: 18px;
 }
@@ -1770,6 +1771,22 @@ body {
   top: 4px;
 }
 
+.chehui {
+  background: url(../images/icon/quan_hui.png);
+  background-size: 100%;
+  position: relative;
+}
+.chehui:after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 42px;
+  background: url(../images/icon/chehui.png);
+  background-size: 100%;
+  right: 18px;
+  top: 4px;
+}
+
 .messages {
   background: #fff;
 }
@@ -2175,6 +2192,49 @@ body {
   top: 0;
   left: 0;
   bottom: 0;
+}
+
+.notFind{
+  display:block;
+  width:260px;
+  height:90px;
+  background:url(../images/icon/failed.png) no-repeat;
+  background-size:100%;
+  margin:60px auto 0;
+}
+.notFind_h4{
+  color:#323232;
+  font-size:16px;
+  text-align:center;
+  margin-top:50px;
+  font-weight:normal;
+}
+.nf_text{
+  font-size:12px;
+  color:#969696;
+  text-align:center;
+  margin-top:10px;
+}
+.nf_a{
+  display:block;
+  width:160px;
+  height:40px;
+  line-height:40px;
+  text-align:center;
+  margin:30px auto 0;
+  background:#ecbda4;
+  color:#fff;
+  font-size:16px;
+  -webkit-border-radius:20px;
+  border-radius:20px;
+}
+.fuerror{
+  display:block;
+  width:260px;
+  height:113px;
+  background:url(../images/icon/500.png) no-repeat;
+  background-size:100%;
+  margin:60px auto 0;
 }
 
 @-webkit-keyframes loading {

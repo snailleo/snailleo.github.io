@@ -187,9 +187,9 @@ $(function(){
       var _t = $(this);
       flag = $(this).hasClass('on');
       if(flag){
-        _t.removeClass('on').siblings('p').hide();
+        _t.removeClass('on').siblings('p').slideUp();
       }else{
-        _t.addClass('on').siblings('p').show();
+        _t.addClass('on').siblings('p').slideDown();
       }
     })
 });
