@@ -976,6 +976,8 @@ body {
   line-height: 20px;
   color: #646464;
   font-size: 14px;
+  border:none;
+  height:20px;
 }
 .address .address_you a {
   display: block;
