@@ -972,7 +972,7 @@ body {
   right:10px;
   margin-top:-27px;
 }
-.address .address_you p {
+.address .address_you .address_pnum{
   line-height: 20px;
   color: #646464;
   font-size: 14px;
