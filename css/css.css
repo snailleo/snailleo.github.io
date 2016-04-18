@@ -1478,6 +1478,7 @@ body {
   margin-right: 15px;
   background: url(../images/icon/sheep_head.png);
   background-size: 100%;
+  overflow:hidden;
 }
 .center_dl dt img {
   width: 100%;
