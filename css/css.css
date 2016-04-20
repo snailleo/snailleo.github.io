@@ -416,8 +416,9 @@ overflow: hidden;
 }
 
 .index_tit {
-  width: 265px;
-  height: 38px;
+  /*width: 265px;*/
+  width: 10vw;
+  height: 50vh;
   background: url("../images/icon/tit_bg.png");
   background-size: 100%;
   text-align: center;
