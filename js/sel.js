@@ -23,6 +23,7 @@ S.utils = {
 		lay.className = "msite_overlay";
 		lay.style.background = "rgba(0,0,0,0.4)";
 		document.body.appendChild(lay)
+		document.body.classList.add('body_fix')
 
 		lay.onclick = S.utils.closeMenu;
 		S.vars.close.onclick = function(){S.utils.closeMenu.call(lay);}
@@ -31,6 +32,7 @@ S.utils = {
 		$(this).remove();
 		S.vars.content.style.display = 'none';
 		S.vars.content.style.webkitTransform = "translate3d(0, 0, 0)";
+		document.body.classList.remove('body_fix')
 		//视作从添加购物车成功浮层空白处点击
 		if (getId("gList").style.display == 'none') {
 			$('.guige input[name="skuId"]').val('');

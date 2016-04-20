@@ -2283,4 +2283,9 @@ overflow: hidden;
   }
 }
 
+.body_fix{
+  overflow:hidden;
+  height:100%;
+}
+
 /*# sourceMappingURL=css.css.map */
