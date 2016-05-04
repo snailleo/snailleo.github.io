@@ -18,7 +18,9 @@ MF.utils = {
 		setTimeout(function(){
 			MF.vars.content.classList.add('in');
 			MF.vars.content.style.height = window.innerHeight+"px";
-			document.getElementsByClassName('shop_bottom')[0].style.display = "none";
+			if(document.getElementsByClassName('shop_bottom')[0]){
+				document.getElementsByClassName('shop_bottom')[0].style.display = "none";
+			}
 		},10)
 		setTimeout(function(){
 			MF.vars.nav.style.zIndex = '0';
@@ -36,7 +38,9 @@ MF.utils = {
 			MF.vars.content.style.height = "auto";
 			setTimeout(function(){
 				MF.vars.nav.style.display = 'none';
-				document.getElementsByClassName('shop_bottom')[0].style.display = "block";
+				if(document.getElementsByClassName('shop_bottom')[0]){
+					document.getElementsByClassName('shop_bottom')[0].style.display = "block";
+				}
 			},800)
 		}
 	},
