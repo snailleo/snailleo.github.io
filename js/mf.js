@@ -36,7 +36,7 @@ MF.utils = {
 			setTimeout(function(){
 				MF.vars.nav.style.display = 'none';
 				document.getElementsByClassName('shop_bottom')[0].style.position = "fixed";
-				alert(123)
+				document.getElementsByClassName('shop_bottom')[0].style.bottom = "0";
 			},800)
 		}
 	},
