@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>酷兒</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1,minimum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name='apple-touch-fullscreen' content='yes'>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/mobiscroll.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/mobiscroll.2.13.2.js"></script>
+</head>
+<body class="cloud_bg">
+<div class="mes_head">
+    <a href="javascript:;" class="goback"></a>
+    <i></i>
+</div>
+
+<div class="gongxi">
+    <span class="guang"></span>
+    <span class="yingle"></span>
+    <p>没错！你就是酷兒钦点的幸运儿！在以下的信息栏中留下你的姓名、地址、和手机号码（一定要在发放中奖名单后的15天以内完成哦），我们会在收到以上信息后，第一时间将酷兒的礼品速速递到你的手中噢！</p>
+</div>
+
+<ul class="mes_list win_list">
+    <li>
+        <input type="text" class="mes_input" id="uname">
+    </li>
+    <li>
+        <input type="text" class="mes_input" id="phone">
+    </li>
+    <li>
+        <input type="text" class="mes_input" id="address">
+    </li>
+    
+</ul>
+<div class="mes_bot win_bot">
+    <span class="error" id="error"></span>
+    <a href="javascript:;" class="win_btn" id="win_btn"></a>
+</div>
+
+<script src="js/kuer.js"></script>
+<script>
+;(function(){
+    reg = /^0?1[3|4|5|8|7][0-9]\d{8}$/;
+    var phone,uname,address,data;
+
+    $("#win_btn").on('click',function(){
+        phone = document.getElementById('phone').value;
+        uname = document.getElementById('uname').value;
+        address = document.getElementById('address').value;
+        if(!reg.test(phone) && phone){
+            document.getElementById('error').innerHTML = '请输入正确的手机号码';
+            return
+        }
+        if(!phone && !uname && !address){
+            document.getElementById('error').innerHTML = '请将信息填写完整';
+            return
+        }
+        data = {
+            mobilephone:phone,
+            uname:uname,
+            address:address,
+            openid:123445667
+        }
+        getPer();
+    })
+
+    function getPer(){
+        $.ajax({
+            url:'http://211.151.68.29:8091/KrInfoCollection/getPrizePeriod',
+            success:function(res){
+                if(res.status == 200){
+                    data.period = res.data;
+                    upmes();
+                }
+            }
+        })
+    }
+    function upmes(){
+        $.ajax({
+            url:'http://211.151.68.29:8091/KrInfoCollection/addPrizeInfo',
+            data:data,
+            success:function(res){
+                if(res.status == 200){
+                    // getList(res.data);
+                }
+            }
+        })
+    }
+})()
+</script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>酷兒</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1,minimum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name='apple-touch-fullscreen' content='yes'>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/mobiscroll.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/mobiscroll.2.13.2.js"></script>
+</head>
+<body class="cloud_bg">
+<div class="mes_head">
+    <dl class="list_head">
+        <dt><img src="images/list_head.png" alt=""></dt>
+        <dd>
+            <p class="list_name"><img src="images/list_name.png" alt=""></p>
+            <p class="list_pai" id="list_pai">排名第0位</p>
+        </dd>
+    </dl>
+    <em class="list_code" id="list_code">0</em>
+</div>
+
+<div class="klist_tit">
+    <span></span>
+    <span id="klist_on"></span>
+</div>
+
+<div class="klist_con">
+    <p>
+        <span>排名</span>
+        <span>会员名称</span>
+        <span id="zhishu">酷指数</span>
+    </p>
+    <ul class="klist_ul" id="list">
+        <!-- <li>
+            <span>1</span>
+            <span>酷儿小兵酷儿小兵</span>
+            <span>66.3</span>
+        </li> -->
+    </ul>
+</div>
+
+
+<div class="klist_bot">
+    <a class="klist_shuo"></a>
+    <a href="medalList.html" class="klist_jiang"></a>
+</div>
+
+<div class="pop">
+    <span id="close"></span>
+    <p class="pai_gz">指数排行榜 : 此榜单为根据用户累计Qoo指数分值产生而来，以2016年4月为起始时间，累加得到当前Qoo指数数值。每日更新Qoo指数榜单情况，取当日Qoo指数TOP200的用户名单，展示在榜单中。<br/>增幅排行榜 : 此榜单为增幅榜，以用户每月1日0点时的Qoo指数为基数，每日更新当月增幅情况，取当月增幅TOP200的用户名单，展示在榜单中。增幅不累计，每个自然月您的Qoo指数增幅都是从零开始。
+
+ </p>
+</div>
+
+<span class="sugar" id="sugar"></span>
+
+<script src="js/kuer.js"></script>
+<script>
+;(function(){
+    init()
+    var list = document.getElementById('list'),_htm = '',
+    kpai=0,kcode=0,zpai=0,zcode=0;
+    type = 1;
+    $('.klist_tit span').on("click",function(){
+        if(this.id){
+            type = 2;
+            document.getElementById('zhishu').innerHTML = '增幅指数';
+            document.getElementById('list_pai').innerHTML = zpai;
+            document.getElementById('zhishu').innerHTML = zcode;
+            $(".klist_tit").addClass('on')
+        }else{
+            type = 1;
+            document.getElementById('zhishu').innerHTML = '酷指数';
+            document.getElementById('list_pai').innerHTML = kpai;
+            document.getElementById('zhishu').innerHTML = kcode;
+            $(".klist_tit").removeClass('on')
+        }
+        getList()
+    })
+    var $mask = $('<div id="maskLayer" class="fade"></div>'),
+    height = $(window).height(),
+    width = $(window).width();
+    $('.klist_shuo').on('click',function(){
+        $mask.appendTo("body").css({
+            "background":"#000","top":0,"left":0,"position":"absolute","zIndex":2,"height": height,"width": width,"opacity":0.3
+        });
+        $(".pop").show();
+    })
+    $('#close').on('click',function(){
+        $(".pop").hide();
+        $mask.remove();
+    })
+
+    var sugar = document.getElementById('sugar');
+    setTimeout(function(){
+        sugar.classList.add('in');
+        sugar.addEventListener('click',function(){
+            this.classList.remove('in')
+        })
+    },1000)
+
+    function init(){
+         $.ajax({
+            url:'http://211.151.68.29:8091/KrInfoCollection/queryFollowerInfo',
+            data:{
+                openid:123445667
+            },
+            success:function(res){
+                if(res.status == 200){
+                    rendHead(res.data);
+                    kpai=data.Qooindexordernum;
+                    data.Qooindex=0;
+                    zpai=data.incrpctordernum;
+                    zcode=data.incrpct;
+                }
+            }
+        })
+    }
+    function rendHead(){
+        document.getElementById('list_pai').innerHTML = '排名第'+data.Qooindexordernum+'位';
+        document.getElementById('list_code').innerHTML = data.Qooindex;
+    }
+    function getList(){
+        $.ajax({
+            url:'http://211.151.68.29:8091/KrInfoCollection/kooIndexList',
+            data:{
+                type:type
+            },
+            success:function(res){
+                if(res.status == 200){
+                    rendList(res.data);
+                }
+            }
+        })
+    }
+    function rendList(data){
+        for(var i=0;i<data.length;i++){
+            _htm += '<li>'+
+                        '<span>'+(i+1)+'</span>'+
+                        '<span>'+data[i].uname+'</span>'+
+                        '<span>'+data[i].Qooindex+'</span>'+
+                    '</li>';
+        }
+        list.innerHTML = _htm;
+    }
+    getList()
+})()
+</script>
+</body>
+</html>

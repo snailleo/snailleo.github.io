@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>酷兒</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1,minimum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name='apple-touch-fullscreen' content='yes'>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/mobiscroll.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/mobiscroll.2.13.2.js"></script>
+</head>
+<body class="cloud_bg">
+<div class="mes_head">
+    <a href="javascript:;" class="goback"></a>
+    <b></b>
+</div>
+<div class="jiedu_top">
+    <span></span>Qoo指数是我们基于您在本活动的个人资料完善情况、可口可乐天猫官方旗舰店酷兒产品购买情况、以及在微信官方账号上与酷兒的互动情况，按照本活动分制规则，客观计算呈现的。主要用于体现您与酷兒的一个整体互动情况。
+</div>
+<ul class="jiedu_list" id="list">
+    <li>
+        <span><i></i></span>
+        <p>你可以通过打开酷兒微信公众帐号中的菜单栏里或者你的个人Qoo指数页面中的<em>“完善个人信息”</em>填写个人资料，个人信息越完善，分值越高，也说明你对酷兒越信任噢！需要注意的是，部分问卷题目会不断更新。该分值每天更新一次噢! 
+</p>
+    </li>
+    <li>
+        <span><i></i></span>
+        <p>你可以通过酷兒微信公众账号菜单栏或者好友转发进入到以下十个页面【品牌故事、酷兒家族、酷兒水果牛奶饮品、酷兒身世之谜、酷兒表情、酷兒壁纸第一弹、酷兒壁纸第二弹、童心测试、童心杂货铺、最酷的童年】<em>参与相关活动，或者发送消息给酷兒（如定位，消息、语音留言，上传图片或视频），以及扫酷兒产品瓶身二维码关注微信公众号等。</em>以上互动行为越多，你的互动指数就越高噢！具体积分规则是：第一天每次互动计3分，第二天每次互动计4分，第三天每次互动计5分，以此类推。一旦中断互动，则分值就要重新进行累加。需要注意的是，每个自然月里每个用户获得的互动指数分值累计不得超过300分。该分值每天更新一次噢!
+</p>
+    </li>
+    <li>
+        <span><i></i></span>
+        <p><em>只要在可口可乐天猫官方旗舰店购买酷兒任意产品</em>，并且购买数量越多购买指数分值越高噢！具体积分规则是：每购买1元计2分，购买金额按照您实际支付的金额计算。该分值将在每个月月初和月中分别更新一次噢!
+</p>
+    </li>
+    <li>
+        <span><i></i></span>
+        <p>你可以通过酷兒微信公众账号菜单栏或者好友转发进入到以下十个页面【品牌故事、酷兒家族、酷兒水果牛奶饮品、酷兒身世之谜、酷兒表情、酷兒壁纸第一弹、酷兒壁纸第二弹、童心测试、童心杂货铺、最酷的童年】。越多的小伙伴看到这些页面，你的活动影响力分值就越高噢! 同样，在每个自然月里每个用户获得的活动影响力指数累计不得超过300分。该分值每天更新一次噢!
+</p>
+    </li>
+</ul>
+
+
+<!-- <div class="mes_bot win_bot">
+    <a href="javascript:;" class="win_btn"></a>
+</div> -->
+
+<script src="js/kuer.js"></script>
+<script>
+;(function(){
+    $('#list li span').on('click',function(){
+        var flag = $(this).hasClass('on');
+        if(!flag){
+            $(this).addClass('on');
+            $(this).siblings('p').show();
+        }else{
+            $(this).removeClass('on');
+            $(this).siblings('p').hide();
+        }
+    })
+})()
+</script>
+</body>
+</html>
