@@ -237,9 +237,10 @@ img, input, select, label, button {
   max-width: 325px;
   height: 44px;
   display: block;
-  background: url(../images/mes_btn.png) no-repeat;
+  background: url(../images/mes_btn.png) no-repeat red;
   background-size: 100% 100%;
   margin: 10px auto 0;
+  z-index: 1;
 }
 
 .mes_bot {
