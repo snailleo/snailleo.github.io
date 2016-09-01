@@ -179,6 +179,12 @@ img, input, select, label, button {
   height: 45px;
   border-bottom: 1px solid #e6e6e6;
 }
+.mes_list.on {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
 
 .mes_input, .text-right {
   width: 50%;
