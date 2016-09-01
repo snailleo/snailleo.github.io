@@ -248,8 +248,12 @@ img, input, select, label, button {
   z-index: -1;
 }
 
+#personal .mes_bot {
+  padding-bottom: 0;
+}
+
 .mes_bot {
-  padding-bottom: 145px;
+  padding-bottom: 30px;
   position: relative;
 }
 
