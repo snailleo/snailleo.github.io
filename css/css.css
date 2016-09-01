@@ -132,10 +132,10 @@ img, input, select, label, button {
 }
 
 .mes_head {
-  position: static;
+  position: relative;
   width: 100%;
   height: 80px;
-  background: url(../images/mess_top.png) no-repeat red;
+  background: url(../images/mess_top.png) no-repeat;
   background-size: 100% 100%;
   overflow: auto;
 }
@@ -239,7 +239,7 @@ img, input, select, label, button {
   display: block;
   background: url(../images/mes_btn.png) no-repeat;
   background-size: 100% 100%;
-  margin: 10px auto 0;
+  margin: 10px auto 40px;
   z-index: -1;
 }
 
