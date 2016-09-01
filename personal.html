@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>酷兒8</title>
+    <title>酷兒2</title>
     <meta name="description" content="">
     <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1,minimum-scale=1.0, user-scalable=no">
     <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)">
@@ -302,14 +302,16 @@ function updateMes(){
 
 
 $(function () { 
-    addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); 
-    function hideURLbar(){ 
-        window.scrollTo(0,1); 
-    }
+    alert($('body').height())
+    // addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); 
+    // function hideURLbar(){ 
+    //     window.scrollTo(0,1); 
+    // }
     $('#code_text').on('click',function(){
-        window.scrollTo(0,1);
+        // window.scrollTo(0,1);
         setTimeout(function(){
-            window.scrollTo(0,1);
+            alert($('body').height())
+            // window.scrollTo(0,1);
         }, 2000);
         // $('body').css({'padding-bottom':'0'})
     });
