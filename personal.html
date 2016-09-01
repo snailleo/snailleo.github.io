@@ -14,9 +14,9 @@
     <meta name="format-detection" content="address=no">
     <meta name="full-screen" content="yes" />
     <meta name="x5-fullscreen" content="true" />
-    <link rel="stylesheet" href="css/css.css">
     <link rel="stylesheet" href="css/mobiscroll.css">
     <link rel="stylesheet" type="text/css" href="css/mobile-select-area.css">
+    <link rel="stylesheet" href="css/css.css">
     <script src="js/jquery.js"></script>
     <script src="js/mobiscroll.2.13.2.js"></script>
     <script type="text/javascript" src="js/dialog.js"></script>
@@ -307,7 +307,7 @@ $(function () {
     //     window.scrollTo(0,1); 
     // }
     $('#code_text').on('click',function(){
-        document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+        $('body').css({'padding-bottom':'0'})
     });
 
     $('#sub').on('click',function(){
