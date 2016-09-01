@@ -300,7 +300,9 @@ function updateMes(){
 
 
 $(function () { 
-    
+    $('#code_text').on('click',function(){
+        $('body').css({'padding-bottom':'30px'})
+    });
 
     $('#sub').on('click',function(){
         check();
