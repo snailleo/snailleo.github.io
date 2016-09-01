@@ -301,7 +301,9 @@ function updateMes(){
 
 $(function () { 
     $('#code_text').on('click',function(){
-        alert($('body').css('padding'))
+        setTimeout(function(){
+            alert($('body').css('padding'))
+        },2000)
     });
 
     $('#sub').on('click',function(){
