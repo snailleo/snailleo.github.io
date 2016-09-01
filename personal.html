@@ -302,6 +302,11 @@ function updateMes(){
 
 
 $(function () { 
+    addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); 
+    function hideURLbar(){ 
+        window.scrollTo(0,1); 
+        alert(123)
+    }
     $('#code_text').on('click',function(){
         // setTimeout(function(){
         //     $('.mes_list').addClass('on')
