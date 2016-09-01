@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>酷兒</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1,minimum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name='apple-touch-fullscreen' content='yes'>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/mobiscroll.css">
+    <link rel="stylesheet" type="text/css" href="css/mobile-select-area.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/mobiscroll.2.13.2.js"></script>
+    <script type="text/javascript" src="js/dialog.js"></script>
+    <script type="text/javascript" src="js/data.json"></script>
+    <script type="text/javascript" src="js/mobile-select-area.js"></script>
+</head>
+<body class="cloud_bg">
+<div class="mes_head">
+    <dl class="list_head">
+        <dt><img src="images/list_head.png" alt="" id="head_img"></dt>
+        <dd>
+            <p class="list_name2" id="uname">酷儿</p>
+        </dd>
+    </dl>
+</div>
+
+<form id="personal" name="per">
+<ul class="mes_list">
+    <li>
+        <input type="text" class="mes_input" name="mobilephone" value="">
+    </li>
+    <li>
+        <input type="text" class="mes_input" name="tmalluname" value="">
+    </li>
+    <li>
+        <!-- <input type="text" class="mes_input"> -->
+        <select name="gender" id="sex" class="sqh_color_99" data-role="none">  
+            <option value="">请选择</option>  
+            <option value="F">男</option>  
+            <option value="M">女</option>  
+            <option value="S">保密</option>  
+        </select>
+    </li>
+    <li>
+        <input type="text" class="mes_input" id="date" name="birthdate">
+    </li>
+    <li>
+        <input type="text" class="mes_input" id="area" readonly="" data-value="">
+        <input type="hidden" name="province" id="province">
+        <input type="hidden" name="city" id="city">
+    </li>
+    <li>
+        <select name="maritalstatus" id="merray" class="sqh_color_99" data-role="none">  
+            <option value="">请选择</option>  
+            <option value="M">已婚</option>  
+            <option value="N">未婚</option>  
+            <option value="S">保密</option>  
+        </select>
+    </li>
+    <li>
+        <!-- <input type="text" class="mes_input" name="babyage" placeholder="小于14周岁"> -->
+        <select name="babyage" id="babyage" class="sqh_color_99" data-role="none">  
+            <option value="">请选择</option>  
+            <option value="A">3岁以下</option>  
+            <option value="B">3-6岁</option>  
+            <option value="C">7-12岁</option>  
+            <option value="D">13-15岁</option>  
+            <option value="E">15岁以上</option>  
+            <option value="F">没有宝宝</option>  
+        </select>
+    </li>
+    <li>
+        <input type="text" class="mes_input" id="ok" readonly>
+        <input type="hidden" name="interest">
+    </li>
+    <li>
+        <span id="code"></span><input type="text" class="mes_input" id="code_text">
+    </li>
+</ul>
+<input type="hidden" name="openid" value="123445667">
+<div class="mes_bot">
+    <p class="mes_xieyi">
+        <i></i>
+        <a href="javascript:;" id="read"></a>
+        <span></span>
+    </p>
+    <a href="javascript:;" class="mes_btn" id="sub"></a>
+</div>
+</form>
+
+<div id="detail">
+    <div class="pop_top">
+        <span id="A1">教育</span>
+        <span id="A2">育儿</span>
+        <span id="A3">美容</span>
+        <span id="A4">数码</span>
+        <span id="A5">书刊</span>
+        <span id="A6">明星</span>
+        <span id="A7">网购</span>
+        <span id="A8">宠物</span>
+        <span id="A9">美食</span>
+        <span id="A10">观影</span>
+        <span id="A11">运动</span>
+        <span id="A12">旅游</span>
+        <span id="A13">音乐</span>
+        <span id="A14">动漫</span>
+        <span id="A15">游戏</span>
+        <span id="A16">汽车</span>
+        <span id="A17">医疗健康</span>
+        <span id="A18">金融理财</span>
+        <span id="A19">房产家居</span>
+        <span id="A20">其他</span>
+    </div>
+    <div class="pop_foot">
+        <a href="javascript:;" class="pop_cancle">取消</a>
+        <a href="javascript:;" class="pop_yes">确认</a>
+    </div>
+</div>
+
+<div id="yuedu_pop" class="yuedu_pop">
+    <span class="pop_xieyi"></span>
+    <span class="pop_cancle"></span>
+    <p>Qoo指数是一款面向酷兒微信公众账号粉丝，专门用于与品牌进行沟通交流的活动应用。其目标用户应为酷兒微信公众账号粉丝（以下简称“用户”）。<br/>
+
+本用户管理协议适用于用户对“Qoo指数”的注册、登录和使用。“用户”是指参与本活动的实际使用人，在本协议中更多地称为“您”。<br/>
+
+对于使用Qoo指数的每一位用户，本公司均尊重其隐私权。本用户管理协议概述可口可乐饮料（上海）有限公司（以下简称“可口可乐方”）将可能收集的资料，以及将如何使用该资料。<br/>
+<b>个人资料</b> <br/>
+作为Qoo指数的用户，您可能须向我们提供您的个人信息资料（以下简称“资料”）。在您使用Qoo指数过程中，会被要求提供以下资料，包含但不限于姓名、出生年月日、性别、手机号码、天猫用户名、居住地址、婚姻状况、家庭成员情况（如：您宝宝的年龄等）、兴趣爱好等个人资料。您自愿同意将以上资料提供给我们。您明白向我们提供的所有资料将被我方收集起来，除另行说明外，我们可按以下方式使用该等资料：<br/>
+（1）向您提供我们的产品和服务，具体包括但不限于：Qoo指数应用中涉及到的用户的信任指数分值的计算；根据每一期的中奖名单以及收集到的用户相关个人资料，进行奖品的发放<br/>
+（2）就您可能感兴趣的产品和服务与您进行联络，且此等联络在使用的法律法规之内，具体包括但不限于：通过用户个人资料判断您感兴趣的内容，并在酷兒微信官方账号上就以上信息与您进行沟通交流<br/>
+（3）优化我们的产品和提升Qoo指数应用的用户体验<br/>
+在未得到您的许可之前,我们不会亦无意向无关的第三方（个人或公司）提供您的个人资料。惟按下列规定使用和披露时不在此限。<br/>
+<b>限制利用原则</b><br/>
+本功能应用惟有在符合下列某一条件的情况下，才能对收集的个人资料进行必要范围以外的利用： <br/>
+已取得您的书面同意； <br/>
+根据有关的法律法规要求；<br/>
+按照相关政府主管部门的要求；<br/>
+为免除您在生命、身体或财产方面之急迫危险；<br/>
+为防止他人权益之重大危害；<br/>
+为维护可口可乐方的合法权益；<br/>
+为增进公共利益，且无害于您的重大利益<br/>
+<b>个人资料之披露</b> <br/>
+当政府机关依照法定程序要求本应用披露个人资料时，可口可乐方将根据执法单位之要求或为公共安全之目的提供您的资料。在此情况下之任何披露，可口可乐方均免责。<br/>
+<b>儿童</b> <br/>
+可口可乐方无意向十二岁以下的人士收集任何个人资料。在适当的情况下，我们将明确指示儿童不要在本活动内提供该等资料和/或将采取合理步骤确保该等资料的提供是得到家长同意的。 <br/>
+家长应注意，可口可乐公司的用户管理协议将监管可口可乐方对个人资料的使用，但儿童或其他人通过聊天网站、交换电邮、公布版或类似形式而自愿提供的资料，可能会被其他人士使用作主动发放邮件。可口可乐公司鼓励所有家长指导他们的子女在使用互联网时应安全及负责任地使用其个人资料 <br/>
+<b>自动收集的额外资料</b>  <br/>
+在某些情况下，当您已参与到本活动后，我们可能自动地(即无需通过登记)收集不足以使他人辨识到个人身份的技术性资料。收集这些信息涉及到记录访问本应用的每个用户的手机终端、操作平台、浏览器软件等。通过收集上述信息，我们可以优化在您手机屏幕上显示的页面，并进行客流分析，从而改进本功能应用的管理和服务。<br/>
+
+<b>免责</b> <br/>
+除上述依政府机关法定要求披露个人资料属免责外，下列情况时本应用亦毋需承担任何责任： <br/>
+由于您将用户密码告知他人或与他人共享注册账号，由此导致的任何个人资料泄露。 <br/>
+任何由于黑客政击、网络手机病毒侵入或发作、因政府管制而造成的暂时性关闭等影响网络正常经营之不可抗力而造成的个人资料泄露、丢失、被盗用或被窜改等。 <br/>
+由于与本活动链接的其它网站所造成之个人资料泄露及由此而导致的任何法律争议和后果。<br/>
+<b>修订</b><br/>
+根据社会环境及相应法律法规或科技进步的需要，我们有权不时修订本用户管理协议。修改后的条款一旦公布即代替原来的条款，不再另行通知，在酷儿方修改本用户管理协议的条款后，如果用户不接受修改后的条款，有权停止使用本应用，用户继续使用本应用将被视为已接受了修改后的用户管理协议。<br/>
+<span style="display:block;text-align:right;">可口可乐饮料（上海）有限公司</span>
+
+
+
+
+
+</p>
+</div>
+
+
+<script src="js/kuer.js"></script>
+<script src="js/vCode.js"></script>
+<script>
+
+$('#sex,#merray,#babyage').mobiscroll().select({  
+    theme: 'android-ics light',  
+    mode: 'scroller',  
+    display: 'bottom',  
+    inputClass: 'clear_border text-right ',  
+    btnClass : 'sqh_color_56 font_16 sqh_line_height_15 margin_10 sqh_font_type',  
+    //设置为false，则点击空白地方不会关闭弹出层，默认为true  
+    closeOnOverlay:true,  
+    lang: 'zh'  
+});
+
+function render(data){
+    if(data.province){
+        var sel = [];
+        sel[0] = data.province;
+        data.city?sel[1]=data.city:sel[1]=0;
+        $('#area').data('value',sel.join(','));
+
+    }
+    var input_val = '';
+    datas.forEach(function(i,e){
+        if(i.id == data.province){
+            input_val = i.name;
+            if(!data.city) return;
+            i.child.forEach(function(child,idx){
+                if(child.id == data.city){
+                    input_val += ' '+child.name
+                }
+            })
+            return
+        }
+    })
+    $('#area').val(input_val)
+    
+    if(data){
+        per.mobilephone.value = data.mobilephone;
+        per.tmalluname.value = data.tmalluname;
+        $("#sex").mobiscroll("setValue",data.gender,true);
+        $("#babyage").mobiscroll("setValue",data.babyage,true);
+        per.birthdate.value = data.birthdate;
+        per.province.value = data.province;
+        per.city.value = data.city;
+        $("#merray").mobiscroll("setValue",data.maritalstatus,true);
+        per.babyage.value = data.babyage;
+        per.interest.value = data.interest;
+        setInterest();
+    }
+    
+
+    var selectArea = new MobileSelectArea();
+    selectArea.init({trigger:'#area',data:datas,default:true,value:$('#area').data('value'),position:"bottom",level:2,callback:function(scroller,text,value){
+            if(value[0]){
+                document.getElementById('province').value = value[0];
+            }
+            if(value[1]){
+                document.getElementById('city').value = value[1]
+            }
+    }});
+    
+}
+
+function setInterest(){
+    if(!per.interest.value){return}
+    var interest = per.interest.value.split(','),arr=[];
+    for(var i=0;i<interest.length;i++){
+        // console.log(interest[i])
+        document.getElementById(interest[i]).className = 'on';
+        arr.push(document.getElementById(interest[i]).innerHTML);
+    }
+    $('#ok').val(arr.join(','));
+}
+
+var container = document.getElementById('code')
+var code2 = new vCode(container, {
+    len: 4,
+    bgColor: "#eef8f7",
+    colors: [
+        "4e8408",
+        "4e8408",
+        "4e8408",
+        "4e8408",
+    ]
+});
+
+function getPreYear(){
+    var now = new Date();
+    years = (now.getFullYear()-14)+','+(now.getMonth()+1)+','+now.getDate();
+    return years
+}
+
+
+function check(){console.log($('form').serialize())
+    var flag = document.getElementById('read').className,
+    code_text = document.getElementById('code_text').value,
+    reg = /^0?1[3|4|5|8|7][0-9]\d{8}$/;
+
+    if(!flag){
+        malert('请先阅读并同意酷儿用户管理协议');
+        return false
+    }
+    if(!code2.verify(code_text)){
+        // console.log(code_text,code2)
+        malert('请填写正确的验证码');
+        return false
+    }
+    if(per.mobilephone.value && !reg.test(per.mobilephone.value)){
+        malert('请输入正确的手机号码');
+        return false
+    }
+    updateMes();
+}
+function updateMes(){
+    
+    $.ajax({
+        url:'http://211.151.68.29:8091/KrInfoCollection/addFollowerInfo',
+        data:$('form').serialize(),
+        success:function(res){
+            console.log(res)
+        }
+    })
+}
+
+
+$(function () { 
+    
+
+    $('#sub').on('click',function(){
+        check();
+    })
+    $("#ok").click(function(){
+      popWin("detail"); 
+    }); 
+    
+    $("#date").mobiscroll().date({  
+        theme: "android-ics light",  
+        lang: "zh",  
+        maxDate: new Date(),
+        minDate: new Date(getPreYear()),
+        cancelText: null,  
+        dateFormat: 'yy.mm.dd', //返回结果格式化为年月格式  
+        // wheels:[], 设置此属性可以只显示年月，此处演示，就用下面的onBeforeShow方法,另外也可以用treelist去实现  
+        onBeforeShow: function (inst) { inst.settings.wheels[0].length>3?inst.settings.wheels[0].pop():null; }, //弹掉“日”滚轮  
+        headerText: function (valueText) { //自定义弹出框头部格式  
+            array = valueText.split('.');  
+            return array[0] + "年" + array[1] + "月"+array[2]+"日";  
+        }  
+    });
+
+    $('.pop_top span').on('click',function(){
+        var _t = $(this);
+        var flag = $(this).hasClass('on');
+        if(flag){
+            _t.removeClass('on')
+        }else{
+            _t.addClass('on')
+        }
+    })
+
+    $('#read').on('click',function(){
+        var _t = $(this);
+        var flag = $(this).hasClass('on');
+        if(flag){
+            _t.removeClass('on')
+        }else{
+            pops('yuedu_pop')
+            _t.addClass('on')
+        }
+    })
+
+    $.ajax({
+        url:'http://211.151.68.29:8091/KrInfoCollection/queryFollowerInfo',
+        data:{
+            openid:123445667
+        },
+        success:function(res){
+            if(res.status == 200){
+                render(res.data);
+                document.getElementById('uname').innerHTML = res.data.uname;
+                document.getElementById('head_img').src = res.data.imgurl;
+            }
+        }
+    })
+
+       
+})
+
+</script>
+</body>
+</html>
