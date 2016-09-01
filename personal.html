@@ -12,11 +12,10 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="format-detection" content="telephone=no">
     <meta name="format-detection" content="address=no">
-    <meta name="full-screen" content="yes" />
-  <meta name="x5-fullscreen" content="true" />
-    <link rel="stylesheet" href="css/css.css">
+    
     <link rel="stylesheet" href="css/mobiscroll.css">
     <link rel="stylesheet" type="text/css" href="css/mobile-select-area.css">
+    <link rel="stylesheet" href="css/css.css">
     <script src="js/jquery.js"></script>
     <script src="js/mobiscroll.2.13.2.js"></script>
     <script type="text/javascript" src="js/dialog.js"></script>
@@ -305,7 +304,6 @@ $(function () {
     addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); 
     function hideURLbar(){ 
         window.scrollTo(0,1); 
-        alert(123)
     }
     $('#code_text').on('click',function(){
         // setTimeout(function(){
@@ -323,8 +321,8 @@ $(function () {
     $("#date").mobiscroll().date({  
         theme: "android-ics light",  
         lang: "zh",  
-        maxDate: new Date(),
-        minDate: new Date(getPreYear()),
+        maxDate: new Date(getPreYear()),
+        // minDate: new Date(getPreYear()),
         cancelText: null,  
         dateFormat: 'yy.mm.dd', //返回结果格式化为年月格式  
         // wheels:[], 设置此属性可以只显示年月，此处演示，就用下面的onBeforeShow方法,另外也可以用treelist去实现  
