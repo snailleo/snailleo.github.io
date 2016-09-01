@@ -249,6 +249,7 @@ img, input, select, label, button {
 }
 
 .mes_bot {
+  padding-bottom: 145px;
   position: relative;
 }
 
