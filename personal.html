@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>酷兒2</title>
+    <title>酷兒3</title>
     <meta name="description" content="">
     <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1,minimum-scale=1.0, user-scalable=no">
     <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)">
@@ -12,8 +12,8 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="format-detection" content="telephone=no">
     <meta name="format-detection" content="address=no">
-    <meta name="full-screen" content="yes" />
-    <meta name="x5-fullscreen" content="true" />
+    <!-- <meta name="full-screen" content="yes" />
+    <meta name="x5-fullscreen" content="true" /> -->
     <link rel="stylesheet" href="css/mobiscroll.css">
     <link rel="stylesheet" type="text/css" href="css/mobile-select-area.css">
     <link rel="stylesheet" href="css/css.css">
@@ -302,7 +302,7 @@ function updateMes(){
 
 
 $(function () { 
-    alert($('body').height())
+    alert(document.body.scrollHeight)
     // addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); 
     // function hideURLbar(){ 
     //     window.scrollTo(0,1); 
@@ -310,7 +310,7 @@ $(function () {
     $('#code_text').on('click',function(){
         // window.scrollTo(0,1);
         setTimeout(function(){
-            alert($('body').height())
+            alert(document.body.scrollHeight)
             // window.scrollTo(0,1);
         }, 2000);
         // $('body').css({'padding-bottom':'0'})
