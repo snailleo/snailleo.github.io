@@ -99,7 +99,7 @@ function pops(obj){
 
 	function reModel(){
 		setTimeout(function(){
-			var top =($(window).height()/2-_obj.height()/2+document.body.scrollTop-30)+'px';
+			var top =($(window).height()/2-_obj.height()/2+document.body.scrollTop)+'px';
 		_obj.css({	"left":left,"top":top,"z-index":_z-(-1)});
 		},1000)
 		
