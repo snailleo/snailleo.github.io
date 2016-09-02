@@ -105,7 +105,7 @@ function pops(obj){
 		// },1000)
 		
 		// alert(document.body.scrollTop);
-		height = $(document.body).height(),
+		height = $(document.body).outerHeight(true),
 		width = $(window).width();
 		$("#maskLayer").css({
 			"height": document.body.offsetHeight,"width": width
