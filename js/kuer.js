@@ -75,7 +75,7 @@ function pops(obj){
 	console.log(_obj.height())
 	var _clsbtn = _obj.find(".pop_cancle");
 	var left=($(window).width()/2-_obj.width()/2)+'px';
-	var top =($(window).height()/2-_obj.height()/2)+'px';
+	var top =($(window).height()/2-_obj.height()/2+document.body.scrollTop)+'px';
 	//alert(window.innerHeight)
 	_obj.css({	"left":left,"top":top,"display":"block","z-index":_z-(-1)});
 	setTimeout(function(){
@@ -106,7 +106,7 @@ function pops(obj){
 		
 		// alert(document.body.scrollTop);
 		// alert($('body').outerHeight(true), document.body.offsetHeight);
-		height = document.body.offsetHeight;
+		height = document.body.offsetHeight+1000;
 		width = $(window).width();
 		$("#maskLayer").css({
 			"height": document.body.offsetHeight,"width": width
