@@ -99,11 +99,13 @@ function pops(obj){
 	$(window).bind("resize",function(){reModel();});
 
 	function reModel(){
-		alert(document.body.scrollTop);
-		height = $(window).height(),
-		width = $(window).width();
-		$("#maskLayer").css({
-			"height": document.body.offsetHeight,"width": width
-		});
+		var top =($(window).height()/2-_obj.height()/2+document.body.scrollTop)+'px';
+		_obj.css({	"left":left,"top":top,"display":"block","z-index":_z-(-1)});
+		// alert(document.body.scrollTop);
+		// height = $(window).height(),
+		// width = $(window).width();
+		// $("#maskLayer").css({
+		// 	"height": document.body.offsetHeight,"width": width
+		// });
 	};
 }
