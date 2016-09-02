@@ -91,17 +91,17 @@ function pops(obj){
 		"background":"#000","top":0,"left":0,"position":"absolute","zIndex":_z
 	});
 	setTimeout(function(){
-		$mask.css({"opacity":".4"})
+		$mask.css({"opacity":".8"})
 	})
 	
 
 	$(window).bind("resize",function(){reModel();});
 
 	function reModel(){
-		setTimeout(function(){
-			var top =($(window).height()/2-_obj.height()/2+document.body.scrollTop)+'px';
-		_obj.css({	"left":left,"top":top,"z-index":_z-(-1)});
-		},1000)
+		// setTimeout(function(){
+		// 	var top =($(window).height()/2-_obj.height()/2+document.body.scrollTop)+'px';
+		// _obj.css({	"left":left,"top":top,"z-index":_z-(-1)});
+		// },1000)
 		
 		// alert(document.body.scrollTop);
 		// height = $(window).height(),
