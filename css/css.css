@@ -954,7 +954,7 @@ img, input, select, label, button {
 }
 
 .yuedu_pop {
-  position: fixed;
+  position: absolute;
   display: none;
   width: 322px;
   height: 533px;

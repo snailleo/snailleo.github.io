@@ -102,7 +102,7 @@ function pops(obj){
 		height = $(window).height(),
 		width = $(window).width();
 		$("#maskLayer").css({
-			"height": height,"width": width
+			"height": document.body.offsetHeight,"width": width
 		});
 	};
 }
