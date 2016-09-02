@@ -87,7 +87,7 @@ function pops(obj){
 	
 	var $mask = $('<div id="maskLayer" class="fade"></div>');
 	$mask.appendTo("body").css({
-		"background":"#000","top":0,"left":0,"position":"fixed","zIndex":_z
+		"background":"#000","top":0,"left":0,"position":"absolute","zIndex":_z
 	});
 	setTimeout(function(){
 		$mask.css({"opacity":".4"})
