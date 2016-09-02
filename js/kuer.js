@@ -93,6 +93,7 @@ function pops(obj){
 	setTimeout(function(){
 		$mask.css({"opacity":".8"})
 	})
+	reModel()
 	
 
 	$(window).bind("resize",function(){reModel();});
@@ -104,10 +105,10 @@ function pops(obj){
 		// },1000)
 		
 		// alert(document.body.scrollTop);
-		// height = $(window).height(),
-		// width = $(window).width();
-		// $("#maskLayer").css({
-		// 	"height": document.body.offsetHeight,"width": width
-		// });
+		height = $(window).height(),
+		width = $(window).width();
+		$("#maskLayer").css({
+			"height": document.body.offsetHeight,"width": width
+		});
 	};
 }
