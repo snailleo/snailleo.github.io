@@ -75,8 +75,8 @@ function pops(obj){
 	console.log(_obj.height())
 	var _clsbtn = _obj.find(".pop_cancle");
 	var left=($(window).width()/2-_obj.width()/2)+'px';
-	var top =($(window).height()/2-_obj.height()/2+document.body.scrollTop)+'px';
-	alert(window.innerHeight)
+	var top =($(window).height()/2-_obj.height()/2+80)+'px';
+	// alert(window.innerHeight)
 	_obj.css({	"left":left,"top":top,"display":"block","z-index":_z-(-1)});
 	setTimeout(function(){
 		_obj.addClass('in')	
