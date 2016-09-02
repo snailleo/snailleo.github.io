@@ -94,7 +94,6 @@ function pops(obj){
 		$mask.css({"opacity":".4"})
 	})
 	
-	reModel();
 
 	$(window).bind("resize",function(){reModel();});
 
