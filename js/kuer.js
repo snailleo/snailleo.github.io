@@ -99,10 +99,10 @@ function pops(obj){
 	$(window).bind("resize",function(){reModel();});
 
 	function reModel(){
-		// setTimeout(function(){
-		// 	var top =($(window).height()/2-_obj.height()/2+document.body.scrollTop)+'px';
-		// _obj.css({	"left":left,"top":top,"z-index":_z-(-1)});
-		// },1000)
+		setTimeout(function(){
+			var top =($(window).height()/2-_obj.height()/2)+'px';
+		_obj.css({	"left":left,"top":top,"z-index":_z-(-1)});
+		},1000)
 		
 		// alert(document.body.scrollTop);
 		height = $(window).height(),
