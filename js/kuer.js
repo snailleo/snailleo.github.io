@@ -98,7 +98,7 @@ function pops(obj){
 	$(window).bind("resize",function(){reModel();});
 
 	function reModel(){
-		var top =($(window).height()/2-_obj.height()/2+document.body.scrollTop)+'px';
+		var top =($(window).height()/2-_obj.height()/2+document.body.scrollTop-70)+'px';
 		_obj.css({	"left":left,"top":top,"z-index":_z-(-1)});
 		// alert(document.body.scrollTop);
 		// height = $(window).height(),
