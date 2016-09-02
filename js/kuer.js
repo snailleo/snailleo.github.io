@@ -100,7 +100,7 @@ function pops(obj){
 
 	function reModel(){
 		var top =($(window).height()/2-_obj.height()/2+document.body.scrollTop)+'px';
-		_obj.css({	"left":left,"top":top,"display":"block","z-index":_z-(-1)});
+		_obj.css({	"left":left,"top":top,"z-index":_z-(-1)});
 		// alert(document.body.scrollTop);
 		// height = $(window).height(),
 		// width = $(window).width();
