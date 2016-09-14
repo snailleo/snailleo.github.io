@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>酷兒3</title>
+    <title>酷兒</title>
     <meta name="description" content="">
     <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1,minimum-scale=1.0, user-scalable=no">
     <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)">
@@ -262,7 +262,7 @@ var code2 = new vCode(container, {
 getPreYear();
 function getPreYear(){
     var now = new Date();
-    years = (now.getFullYear()-14)+','+(now.getMonth()+1)+','+now.getDate();
+    years = new Date((now.getFullYear()-14),(now.getMonth()+1),now.getDate());
     // alert(years)
     return years
 }
@@ -314,7 +314,7 @@ $(function () {
     $("#date").mobiscroll().date({  
         theme: "android-ics light",  
         lang: "zh",  
-        maxDate: new Date("2002,9,14"),
+        maxDate: ye,
         // minDate: new Date(getPreYear()),
         cancelText: null,  
         dateFormat: 'yy.mm.dd', //返回结果格式化为年月格式  
